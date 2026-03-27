@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Source files (não versionar PDFs e documentos)
+*.docx
+*.pdf
+scripts/texto-bruto.txt
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

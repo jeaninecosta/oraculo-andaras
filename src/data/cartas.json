@@ -1,0 +1,674 @@
+[
+  {
+    "id": "acqua-blue",
+    "nome": "Andara Acqua Blue",
+    "palavrasChave": "Serenidade, Purificação, Calma Mental, Fluxo Suave, Clareza Emocional, Comunicação Gentil.",
+    "mensagem": "Aproveite a calma mental e a serenidade que a Acqua Blue traz. Ela chega para oferecer clareza e dissipar as dúvidas.Mergulhe em um estado de conexão profunda com o seu Eu Superior e permita-se sentir a certeza do próximo passo.Descanse. Relaxe.Deixe que esta Andara te guie com suavidade e luz",
+    "acaoPratica": "Pegue um copo de água. Antes de beber, segure-o por um instante e intencione que aquela água purifique seus pensamentos e emoções. Beba lentamente, visualizando uma luz azul-piscina limpando todo o seu ser.",
+    "imagem": "/cartas/acqua-blue.jpg"
+  },
+  {
+    "id": "acqua-green",
+    "nome": "Andara Acqua Green",
+    "palavrasChave": "Renovação, Esperança, Cura Emocional, Fluxo Vital, Conexão com a Natureza Aquática, Começos",
+    "mensagem": "Eu sou a promessa de um novo começo. Permita que minhas águas curativas lavem as feridas do seu coração e renovem suas esperanças. Assim como a maré, as emoções vêm e vão. Não se prenda à dor do passado. Olhe para o futuro. É tempo de emergir, respirar ar puro e florescer novamente.",
+    "acaoPratica": "Ao lavar as mãos, visualize que a água está levando embora não apenas a sujeira física, mas também uma emoção ou memória antiga que você está pronto para liberar. Sinta a leveza da renovação.",
+    "imagem": "/cartas/acqua-green.jpg"
+  },
+  {
+    "id": "acqua-serenity",
+    "nome": "Andara Acqua Serenity",
+    "palavrasChave": "Serenidade Profunda, Paz Absoluta, Quietude da Mente, Não-Apego, Estado Meditativo, Vazio Fértil.",
+    "mensagem": "Silêncio. Respire. Eu te trago serenidade. Eu existo no espaço entre os teus pensamentos. Mesmo no caos, há ordem e calma — eu sou essa paz. Pare de lutar consigo mesma. Pare de buscar fora. Apenas seja.Tudo o que você precisa já está aí. A paz que você procura surgirá quando o silêncio florescer em você.",
+    "acaoPratica": "Encontre 3 a 5 minutos para o silêncio absoluto. Desligue tudo. Sente-se confortavelmente e não faça nada além de observar sua respiração. Não tente meditar, apenas fique em silêncio.",
+    "imagem": "/cartas/acqua-serenity.jpg"
+  },
+  {
+    "id": "amarela",
+    "nome": "Andara Amarela",
+    "palavrasChave": "Otimismo, Clareza Mental, Alegria, Poder Pessoal, Intelecto, Foco, Confiança..",
+    "mensagem": "Deixe a luz entrar! Eu sou o raio de sol que dissipa as nuvens da dúvida e da confusão mental. Trago a clareza para suas ideias e a confiança para expressá-las. A alegria não é uma recompensa, é uma escolha. Escolha-a agora com consciência e veja seu poder pessoal florescer.",
+    "acaoPratica": "Faça uma \"pausa solar\". Vá para um local onde possa sentir o sol (ou visualize-o) por 2 minutos. Enquanto absorve a luz, sorria intencionalmente, mesmo que não tenha vontade. Sinta a mudança na sua energia.",
+    "imagem": "/cartas/amarela.jpg"
+  },
+  {
+    "id": "ambar-dourado",
+    "nome": "Andara Âmbar Dourado",
+    "palavrasChave": "Cura Ancestral, Memória da Terra, Paciência, Proteção Quente, Purificação da Linha do Tempo, Sabedoria Antiga.",
+    "mensagem": "Eu sou a memória do tempo e o calor da Terra. Carrego em mim a sabedoria das suas raízes e a força da sua linhagem. Não tenha pressa. A cura mais profunda e a árvore mais forte levam tempo para crescer. Eu te ajudo a purificar as dores do passado que não são suas e a reivindicar apenas a força dos seus ancestrais.",
+    "acaoPratica": "Acenda uma vela amarela ou dourada. Olhando para a chama, pense em seus ancestrais e agradeça-os pela vida que hoje é sua. Peça que apenas a força e as bênçãos deles cheguem até você.",
+    "imagem": "/cartas/ambar-dourado.jpg"
+  },
+  {
+    "id": "anjo",
+    "nome": "Andara Anjo",
+    "palavrasChave": "Conexão Angélica, Proteção Divina, Fé, Esperança, Pureza de Intenção, Comunicação Celestial.",
+    "mensagem": "Você nunca está só. Feche os olhos e sinta a presença suave e protetora ao seu redor. Eu sou um elo direto com o reino angélico, um lembrete de que você é amado, guiado e protegido a cada passo do caminho. Entregue suas preocupações e permita que a fé ilumine sua jornada. Peça e receberá.",
+    "acaoPratica": "Encontre um lugar tranquilo. Feche os olhos e diga em voz alta ou em pensamento: \"Meus anjos e guias, por favor, me mostrem um sinal claro do seu amor e da sua presença hoje\". Fique atento(a) aos sinais. .",
+    "imagem": "/cartas/anjo.jpg"
+  },
+  {
+    "id": "atlantis",
+    "nome": "Andara Atlantis",
+    "palavrasChave": "Sabedoria Atlante, Cura Cristalina, Alta Tecnologia Espiritual, Mestria Emocional, Equilíbrio Mente-Coração, Conhecimento Avançado.",
+    "mensagem": "A sabedoria antiga reside em suas células. Eu desperto a memória da sua mestria atlante, a capacidade de unir o coração e a mente, a tecnologia e a espiritualidade. O verdadeiro poder não está em controlar as emoções, mas em compreendê-las e navegá-las com sabedoria. É hora de reativar seu conhecimento.",
+    "acaoPratica": "Coloque uma mão sobre o coração e a outra sobre a testa (terceiro olho). Respire fundo e visualize uma ponte de luz azul-esverdeada conectando os dois pontos, unificando sua intuição e seu intelecto.",
+    "imagem": "/cartas/atlantis.jpg"
+  },
+  {
+    "id": "azul-celestial",
+    "nome": "Andara Azul Celestial",
+    "palavrasChave": "Paz Profunda, Confiança no Universo, Conexão com Guias, Serenidade Espiritual, Entrega, Fé.",
+    "mensagem": "Respire. Sinta a vastidão acima e dentro de você. Você é parte de algo infinitamente maior e mais sábio do que seus medos. Entregue suas preocupações ao céu e confie no plano divino. Eu te ajudo a silenciar a mente para que você possa ouvir a orientação amorosa dos seus guias.",
+    "acaoPratica": "",
+    "imagem": "/cartas/azul-celestial.jpg"
+  },
+  {
+    "id": "azul-ceu",
+    "nome": "Andara Azul Céu",
+    "palavrasChave": "Clareza, Expansão, Otimismo, Comunicação Leve, Sinceridade, Liberdade.",
+    "mensagem": "Expanda seus horizontes! Não há limites para o seu ser, apenas para os seus pensamentos. Eu trago a clareza para você ver além das suas gaiolas mentais e a coragem para voar. Expresse sua verdade com leveza e sinceridade. O céu não é o limite, é apenas o começo.",
+    "acaoPratica": "",
+    "imagem": "/cartas/azul-ceu.jpg"
+  },
+  {
+    "id": "azul-eletrico",
+    "nome": "Andara Azul Elétrico",
+    "palavrasChave": "Comunicação Superior, Verdade da Alma, Conexão Estelar (Pleiadiana), Canalização",
+    "mensagem": "Sua verdade tem uma frequência. Sintonize-a. Fale a partir da sua alma, não do seu medo. Eu ativo sua voz como um canal de sabedoria superior e o conecto com sua família estelar. É hora de comunicar sua missão. Não se contenha mais. Deixe sua luz vibrar através de suas palavras.",
+    "acaoPratica": "",
+    "imagem": "/cartas/azul-eletrico.jpg"
+  },
+  {
+    "id": "azul-safira",
+    "nome": "Andara Azul Safira",
+    "palavrasChave": "Foco Mental, Disciplina, Sabedoria Divina, Integridade, Mestria, Ordem Mental.",
+    "mensagem": "A brilhante energia azul safira das Andaras envolve você com proteção e serenidade. Abra seu coração para a comunicação sincera e a expressão autêntica. Libere suas preocupações e confie no poder da verdade. Esteja aberto para receber a sabedoria divina e seguir em frente com confiança.",
+    "acaoPratica": "",
+    "imagem": "/cartas/azul-safira.jpg"
+  },
+  {
+    "id": "branca-nuvem",
+    "nome": "Andara Branca Nuvem",
+    "palavrasChave": "Leveza, Sonhos, Imaginação, Potencial Criativo, Suavidade, Pensamento Livre.",
+    "mensagem": "Permita-se sonhar acordado. Suas ideias são como nuvens, cheias de formas e potencial, esperando para chover sobre a terra fértil da sua intenção. Não se prenda à lógica rígida. Deixe sua mente vagar, flutuar e explorar. As melhores soluções surgem da leveza, não da força.",
+    "acaoPratica": "",
+    "imagem": "/cartas/branca-nuvem.jpg"
+  },
+  {
+    "id": "branco-opalescente",
+    "nome": "Andara Branco Opalescente",
+    "palavrasChave": "Magia, Otimismo, Esperança, Conexão com Reinos Elementais, Alegria, Pureza.",
+    "mensagem": "A magia está em toda parte, especialmente nas pequenas coisas. Eu te ajudo a ver o arco-íris nos momentos mais simples e a reacender a chama da esperança em seu coração. A vida é um presente mágico. Permita-se ser encantado por ela novamente. O otimismo é um portal para os milagres.",
+    "acaoPratica": "",
+    "imagem": "/cartas/branco-opalescente.jpg"
+  },
+  {
+    "id": "carmesim",
+    "nome": "Andara Carmesim",
+    "palavrasChave": "Paixão, Força de Vontade, Desejo Puro, Coragem",
+    "mensagem": "Não tema a intensidade que habita em você. Eu sou a força primordial que queima a inércia e transforma desejo em movimento. Sua paixão é sua bússola, a energia mais pura do seu espírito clamando por expressão. Use essa força não para destruir, mas para construir a realidade que sua alma anseia. O primeiro passo é o mais importante. Dê-o agora.",
+    "acaoPratica": "",
+    "imagem": "/cartas/carmesim.jpg"
+  },
+  {
+    "id": "chama-gemea",
+    "nome": "Andara Chama Gêmea",
+    "palavrasChave": "União Sagrada, Reconhecimento da Alma, Amor Espiritual, Cura de Relacionamentos.",
+    "mensagem": "A busca terminou. O outro é um espelho de você. Eu represento a união sagrada que começa primeiro dentro do seu próprio ser. Cure e integre seu masculino e seu feminino internos, e você se tornará um imã para o amor que sua alma reconhece. O amor verdadeiro não é encontrar sua metade, é se tornar inteiro.",
+    "acaoPratica": "",
+    "imagem": "/cartas/chama-gemea.jpg"
+  },
+  {
+    "id": "chama-violeta",
+    "nome": "Andara Chama Violeta",
+    "palavrasChave": "Transmutação, Purificação, Libertação Kármica, Perdão, Alquimia Espiritual, Misericórdia.",
+    "mensagem": "Entregue-me suas dores, seus medos, seus erros. Eu não os julgo nem os destruo. Eu os consumo em meu fogo sagrado e os transformo em luz, sabedoria e compaixão. Você está livre. O poder da transmutação está em suas mãos. Perdoe. Libere. Transforme.",
+    "acaoPratica": "",
+    "imagem": "/cartas/chama-violeta.jpg"
+  },
+  {
+    "id": "champanhe",
+    "nome": "Andara Champanhe",
+    "palavrasChave": "Celebração, Conquista, Prosperidade, Leveza, Otimismo, Sucesso, Gratidão.",
+    "mensagem": "Celebre! A vida te convida a reconhecer suas vitórias, por menores que pareçam. A gratidão pela jornada atrai mais motivos para celebrar. Eu sou a vibração do sucesso e da alegria merecida. Permita-se desfrutar dos frutos do seu trabalho. Você merece brindar às suas conquistas.",
+    "acaoPratica": "",
+    "imagem": "/cartas/champanhe.jpg"
+  },
+  {
+    "id": "chocolate",
+    "nome": "Andara Chocolate",
+    "palavrasChave": "Aterramento, Nutrição, Conexão com o Corpo, Conforto, Estabilidade, Energia da Terra (Gaia).",
+    "mensagem": "Acalme-se. Sinta o apoio sólido e incondicional da Terra sob seus pés. Você está seguro. Permita-se ser nutrido, cuidado e amparado. Antes de voar alto, é preciso ter raízes fortes. Eu te ajudo a fortalecer suas bases para que você possa crescer com estabilidade e segurança.",
+    "acaoPratica": "",
+    "imagem": "/cartas/chocolate.jpg"
+  },
+  {
+    "id": "cianita-azul",
+    "nome": "Andara Cianita Azul",
+    "palavrasChave": "Alinhamento Energético, Quebra de Laços, Ponte Psíquica, Comunicação Telepática,",
+    "mensagem": "Eu sou a ponte de luz que alinha seus corpos e a espada que corta o que não te serve. Não tenha medo de romper os laços energéticos que drenam sua vitalidade. Eu te dou a clareza para ver e a força para cortar. Alinhe-se com sua verdade, e todo o resto se ajustará.",
+    "acaoPratica": "",
+    "imagem": "/cartas/cianita-azul.jpg"
+  },
+  {
+    "id": "ciano",
+    "nome": "Andara Ciano",
+    "palavrasChave": "Tecnologia Pleiadiana, Códigos de Luz, Evolução da Consciência, Cura Quântica, Comunicação de Alma para Alma.",
+    "mensagem": "Você é mais do que humano; você é um ser estelar em uma experiência terrena. Eu reativo seus códigos de luz adormecidos e atualizo seu sistema energético para as novas frequências do planeta. Permita que a evolução aconteça. Sua alma sabe o caminho.",
+    "acaoPratica": "",
+    "imagem": "/cartas/ciano.jpg"
+  },
+  {
+    "id": "cobre",
+    "nome": "Andara Cobre",
+    "palavrasChave": "Condução de Energia, Vitalidade, Amplificação, Equilíbrio, Aterramento Dinâmico, Força Física.",
+    "mensagem": "Eu sou o condutor. Eu aterro o excesso de energia que te deixa ansioso e vitalizo o que está em falta, que te deixa apático. Deixe a energia da vida fluir através de você sem bloqueios. Eu fortaleço seu corpo para que seu espírito possa brilhar. Mova-se. Aja. Viva.",
+    "acaoPratica": "",
+    "imagem": "/cartas/cobre.jpg"
+  },
+  {
+    "id": "coracao-da-galaxia",
+    "nome": "Andara Coração da Galáxia",
+    "palavrasChave": "Unidade, Totalidade, Ponto Zero, Consciência Cósmica, Integração, Origem, Não-Dualidade.",
+    "mensagem": "Você não é uma gota no oceano, você é o oceano inteiro em uma gota. Eu te levo de volta ao ponto de origem, o centro onde tudo é um. Luz e sombra, masculino e feminino, passado e futuro... tudo se integra aqui. Lembre-se da sua totalidade.",
+    "acaoPratica": "",
+    "imagem": "/cartas/coracao-da-galaxia.jpg"
+  },
+  {
+    "id": "coracao-de-avalon",
+    "nome": "Andara Coração de Avalon",
+    "palavrasChave": "Magia da Terra, Conexão com o Reino Elemental (Fae), Sacerdotisa, Cura com a Natureza, Coração Místico.",
+    "mensagem": "A magia não está nos céus, está aqui, pulsando na Terra, no musgo, nas flores, na água. Eu te reconecto com a antiga magia de Avalon e com a sabedoria das sacerdotisas. Ouça o coração do mundo. Dance com os elementais. Lembre-se de que você também é natureza.",
+    "acaoPratica": "",
+    "imagem": "/cartas/coracao-de-avalon.jpg"
+  },
+  {
+    "id": "coral",
+    "nome": "Andara Coral",
+    "palavrasChave": "Energia Comunitária, Conexão, Interdependência, Cooperação, Harmonia em Grupo, Sociabilidade.",
+    "mensagem": "Ninguém é uma ilha. Eu te lembro da força e da beleza da sua conexão com sua tribo, sua comunidade, sua família de alma. Apoie e deixe-se ser apoiado. A energia criada em conjunto é exponencialmente mais poderosa. Celebre suas conexões.",
+    "acaoPratica": "",
+    "imagem": "/cartas/coral.jpg"
+  },
+  {
+    "id": "cosmic-ice",
+    "nome": "Andara Cosmic Ice",
+    "palavrasChave": "Clareza Absoluta, Potencial Puro, Campo Quântico, Ponto Zero, Amplificador de Intenção, Verdade.",
+    "mensagem": "Eu sou o silêncio antes do som, a tela em branco antes da pintura. Estou vazio para que você possa criar tudo. Qual é a sua intenção mais pura? Direcione-a para mim e eu a amplificarei para o cosmos. Seja impecável com sua palavra e seu pensamento, pois o universo está ouvindo.",
+    "acaoPratica": "",
+    "imagem": "/cartas/cosmic-ice.jpg"
+  },
+  {
+    "id": "cosmos",
+    "nome": "Andara Cosmos",
+    "palavrasChave": "Mistérios do Universo, Sonhos, Potencial no Vazio, Consciência Estelar, Infinito, Perspectiva.",
+    "mensagem": "Contemple a vastidão e perceba o quão pequenos são seus problemas e o quão infinito é o seu ser. Eu te convido a explorar os mistérios do seu universo interior, que é tão vasto quanto o céu noturno. Mergulhe em seus sonhos. As respostas estão na escuridão fértil.",
+    "acaoPratica": "",
+    "imagem": "/cartas/cosmos.jpg"
+  },
+  {
+    "id": "crepusculo",
+    "nome": "Andara Crepúsculo",
+    "palavrasChave": "Transição, Liminaridade, Deixar Ir, Magia do Limiar, Balanço, Nostalgia Saudável.",
+    "mensagem": "Eu sou o portal entre os mundos, o momento de pausa sagrada entre a ação e o descanso. É seguro deixar o dia e suas preocupações irem. Abrace este espaço 'entre'. Honre o que foi, libere o que não serve mais e prepare-se para receber os dons da noite. A magia acontece nos momentos de transição.",
+    "acaoPratica": "",
+    "imagem": "/cartas/crepusculo.jpg"
+  },
+  {
+    "id": "divina",
+    "nome": "Andara Divina",
+    "palavrasChave": "Conexão com o Eu Sou, Propósito de Vida, Graça Divina, Iluminação, Consciência Crística/Búdica, Soberania.",
+    "mensagem": "Pare de se procurar lá fora. Você já é. Eu sou apenas o espelho que reflete a sua própria divindade, a sua luz ofuscante, a sua perfeição. Respire fundo e sinta a presença 'EU SOU' no centro do seu peito. Você é a presença divina que tanto busca. Assuma sua luz. Assuma seu poder.",
+    "acaoPratica": "",
+    "imagem": "/cartas/divina.jpg"
+  },
+  {
+    "id": "divine-fire",
+    "nome": "Andara Divine Fire",
+    "palavrasChave": "Força Vital, Paixão, Transformação (Fênix), Renascimento, Coragem, Energia Kundalini, Purificação Ígnea.",
+    "mensagem": "Das cinzas, você renascerá mais forte, mais sábio, mais autêntico. Não tema o fogo da transformação. Permita que minha chama queime o que é velho, o que é falso, o que te limita. O que resta após o fogo é a sua verdade mais pura e indestrutível.",
+    "acaoPratica": "",
+    "imagem": "/cartas/divine-fire.jpg"
+  },
+  {
+    "id": "dourado-cristico",
+    "nome": "Andara Dourado Crístico",
+    "palavrasChave": "Consciência Crística, Sabedoria Iluminada, Mestria Interior, Eu Superior, Manifestação Divina, Soberania.",
+    "mensagem": "Você é o mestre que tanto procura. Eu ativo a consciência crística que já reside em seu coração e em suas células. Pare de dar seu poder aos outros. Reivindique sua soberania, acesse sua sabedoria interior e manifeste sua luz no mundo. Você é filho do Sol.",
+    "acaoPratica": "",
+    "imagem": "/cartas/dourado-cristico.jpg"
+  },
+  {
+    "id": "dragao",
+    "nome": "Andara Dragão",
+    "palavrasChave": "Força Primordial, Sabedoria Antiga, Alquimia Interior, Proteção, Despertar da Kundalini.",
+    "mensagem": "Desperte o poder que dorme em suas veias. Eu sou a memória da Terra, a força dos elementos e a magia que precede o tempo. Pare de buscar poder fora; ele reside em sua espinha dorsal, esperando ser chamado. Eu te ofereço a chave, mas a coragem para girá-la deve ser sua. Reivindique sua soberania.",
+    "acaoPratica": "",
+    "imagem": "/cartas/dragao.jpg"
+  },
+  {
+    "id": "elestial-fume",
+    "nome": "Andara Elestial Fumê",
+    "palavrasChave": "Liberação de Sombras, Cura Profunda, Aceitação, Resgate da Alma, Compreensão do Karma, Compaixão.",
+    "mensagem": "Não tenha medo da sua escuridão, pois nela reside sua maior força. Eu sou a luz suave que te acompanha ao submundo da sua alma. Vamos juntos, com amor e sem julgamento, resgatar os pedaços que você deixou para trás.",
+    "acaoPratica": "",
+    "imagem": "/cartas/elestial-fume.jpg"
+  },
+  {
+    "id": "esfumacado",
+    "nome": "Andara Esfumaçado",
+    "palavrasChave": "Dissolução de Negatividade, Aterramento, Proteção Psíquica, Realismo, Desapego de Dramas.",
+    "mensagem": "Eu sou seu filtro energético. Absorvo e dissolvo a negatividade ao seu redor. Ancore-se no momento presente, com os pés firmes no chão. Deixe os dramas e as ilusões se dissiparem como fumaça. Fique com o que é real.",
+    "acaoPratica": "",
+    "imagem": "/cartas/esfumacado.jpg"
+  },
+  {
+    "id": "esmeralda-do-mar",
+    "nome": "Andara Esmeralda do Mar",
+    "palavrasChave": "Cura Emocional Profunda, Expressão da Alma, Verdade do Coração, Calma Oceânica, Soberania Emocional.",
+    "mensagem": "Mergulhe fundo em seu oceano emocional. Não tenha medo das profundezas. É lá que reside a verdade da sua alma. Eu te ajudo a trazer essa verdade à superfície e a expressá-la com calma, clareza e compaixão. O que seu coração realmente precisa dizer?",
+    "acaoPratica": "",
+    "imagem": "/cartas/esmeralda-do-mar.jpg"
+  },
+  {
+    "id": "fada",
+    "nome": "Andara Fada",
+    "palavrasChave": "Reino Elemental, Magia da Natureza, Alegria, Leveza, Encantamento, Brincadeira, Sorte.",
+    "mensagem": "Leve a vida com mais leveza! Dance, ria, brinque. A magia acontece quando você se permite ser alegre e ver o mundo com olhos de criança. Eu te reconecto com o encanto da natureza e a alegria dos elementais. Não se leve tão a sério.",
+    "acaoPratica": "",
+    "imagem": "/cartas/fada.jpg"
+  },
+  {
+    "id": "fogo",
+    "nome": "Andara Fogo",
+    "palavrasChave": "Ação, Motivação, Energia, Vontade, Impulso, Decisão, Força de Vontade.",
+    "mensagem": "AGORA. O momento de agir é agora. A hora de esperar, planejar e duvidar já passou. Eu sou o combustível para a sua vontade, o impulso que transforma inércia em movimento. Pare de pensar, comece a fazer. A força está na ação.",
+    "acaoPratica": "",
+    "imagem": "/cartas/fogo.jpg"
+  },
+  {
+    "id": "fucsia",
+    "nome": "Andara Fúcsia",
+    "palavrasChave": "Amor Divino, Paixão Espiritual, Devoção, Gratidão Universal, Conexão com o Raio Magenta, Serviço Amoroso.",
+    "mensagem": "Ame apaixonadamente! Ame a vida, ame o Divino, ame a si mesmo. Eu elevo a frequência do seu amor a um nível de devoção e gratidão que se torna uma força de cura no mundo. Seu propósito é amar. Deixe que este amor transborde de você em serviço.",
+    "acaoPratica": "",
+    "imagem": "/cartas/fucsia.jpg"
+  },
+  {
+    "id": "gaia",
+    "nome": "Andara Gaia",
+    "palavrasChave": "Consciência Planetária, Cura da Terra, Conexão com Gaia, Ecologia Espiritual, Aterramento Profundo, Amor pela Vida.",
+    "mensagem": "Eu sou a consciência viva deste planeta, sua Mãe. Sinta meu pulso em seus pés, meu sopro em seus pulmões. Lembre-se que você não está sobre a Terra, você é Terra. Tudo o que você faz a si mesmo, você faz a mim. Cure a si mesmo para me curar. Honre seu lar.",
+    "acaoPratica": "",
+    "imagem": "/cartas/gaia.jpg"
+  },
+  {
+    "id": "gelo-polar",
+    "nome": "Andara Gelo Polar",
+    "palavrasChave": "Pausa, Preservação, Paciência Ancestral, Resiliência, Purificação Profunda, Potencial Adormecido.",
+    "mensagem": "A energia serena do gelo envolve você neste momento. Encontre tranquilidade e clareza dentro de si, trazendo o equilíbrio e a imparcialidade necessária para o momento. Permita que a frieza do passado derreta, revelando um novo começo. Este é o momento de se libertar e renascer, abrindo caminho para a paz e o equilíbrio.",
+    "acaoPratica": "",
+    "imagem": "/cartas/gelo-polar.jpg"
+  },
+  {
+    "id": "indigo",
+    "nome": "Andara Índigo",
+    "palavrasChave": "Intuição Profunda, Terceiro Olho (Ajna), Percepção Sutil, Sabedoria Interior, Consciência Psíquica, Visão Clara.",
+    "mensagem": "Silencie a mente lógica e ouse ouvir com seu olho interior. A verdade mais profunda não precisa de provas, ela é simplesmente sentida. Eu abro as portas da sua percepção para que você possa ver além do véu da ilusão. Confie no que você sabe, mesmo sem saber como sabe.",
+    "acaoPratica": "",
+    "imagem": "/cartas/indigo.jpg"
+  },
+  {
+    "id": "ionico",
+    "nome": "Andara Iônico",
+    "palavrasChave": "Equilíbrio de Polaridades, Yin-Yang, Harmonia, Integração, Resolução de Conflitos, Unidade.",
+    "mensagem": "Na dança da luz e da sombra, do masculino e do feminino, do ativo e do receptivo, reside a harmonia. Pare de lutar contra a sua polaridade oposta; integre-a. A paz que você busca está no ponto de equilíbrio entre os dois extremos. Dance, não lute.",
+    "acaoPratica": "",
+    "imagem": "/cartas/ionico.jpg"
+  },
+  {
+    "id": "iris",
+    "nome": "Andara Íris",
+    "palavrasChave": "Esperança, Promessa Divina, Alquimia da Alegria, Cura Pós-Trauma, Otimismo, Resiliência.",
+    "mensagem": "Mesmo nas suas feridas e quebras, a luz pode entrar e criar o mais belo arco-íris. Eu sou a prova de que a beleza e a alegria podem nascer das suas maiores dificuldades. Não esconda suas cicatrizes, ilumine-as. Você é a promessa da esperança.",
+    "acaoPratica": "",
+    "imagem": "/cartas/iris.jpg"
+  },
+  {
+    "id": "laranja",
+    "nome": "Andara Laranja",
+    "palavrasChave": "Criatividade, Alegria, Entusiasmo, Energia Sacral, Sociabilidade, Paixão Criativa, Prazer.",
+    "mensagem": "A energia vibrante do laranja relaciona-se com seu chacra sacral, trazendo criatividade, movimentação, sexualidade e maior energia vital em você. Deixe sua criatividade fluir e abrace o prazer de viver, libertando-se dos bloqueios e expressando seu Eu verdadeiro. É hora de viver com entusiasmo e experenciar tudo que a vida lhe oferece.",
+    "acaoPratica": "",
+    "imagem": "/cartas/laranja.jpg"
+  },
+  {
+    "id": "lilas",
+    "nome": "Andara Lilás",
+    "palavrasChave": "Transição Suave, Espiritualidade Delicada, Amor Superior, Tranquilidade, Graça, Cura Emocional.",
+    "mensagem": "A suave energia lilás das Andaras traz uma conexão profunda com a espiritualidade. Confie em sua intuição e mergulhe nas profundezas da sabedoria interior. Deixe que a magia do universo se revele e ilumine seu caminho. A resposta que você busca está dentro do seu ser.",
+    "acaoPratica": "",
+    "imagem": "/cartas/lilas.jpg"
+  },
+  {
+    "id": "luminescente-lemuriano",
+    "nome": "Andara Luminescente Lemuriano",
+    "palavrasChave": "Registros Akáshicos, Pureza da Alma, Saudade de Casa (Starseed), Cura Lemuriana, Unidade, Conexão com Cetáceos.",
+    "mensagem": "Lembre-se de quem você era antes do véu da separação. Lembre-se da unidade, do amor puro, da vida em perfeita harmonia. Eu sou um portal para a sua memória lemuriana. Eu te ajudo a curar a dor da separação e a trazer a frequência do paraíso para a sua realidade atual.",
+    "acaoPratica": "",
+    "imagem": "/cartas/luminescente-lemuriano.jpg"
+  },
+  {
+    "id": "magenta",
+    "nome": "Andara Magenta",
+    "palavrasChave": "Amor Divino em Ação, Manifestação Espiritual, Oitavo Raio, Gratidão, Propósito, Sonhos da Alma.",
+    "mensagem": "Eu sou a ponte que transforma suas orações em realidade. Una a intenção do seu espírito (violeta) com o amor do seu coração (rosa) e veja a mágica acontecer. Seus sonhos mais elevados não são caprichos, são parte da sua missão. Manifeste-os com amor.",
+    "acaoPratica": "",
+    "imagem": "/cartas/magenta.jpg"
+  },
+  {
+    "id": "magica-algodao-doce",
+    "nome": "Andara Mágica Algodão Doce",
+    "palavrasChave": "Inocência, Doçura, Magia da Criança Interior, Gentileza, Sonhos Leves, Vulnerabilidade Segura.",
+    "mensagem": "Abrace a doçura da vida e, principalmente, a sua própria. Nem tudo precisa ser duro, difícil ou sério. Eu te lembro da magia de ser gentil consigo mesmo(a) e de ver o mundo com os olhos puros e maravilhados da sua criança interior. É seguro ser suave.",
+    "acaoPratica": "",
+    "imagem": "/cartas/magica-algodao-doce.jpg"
+  },
+  {
+    "id": "magica-verde-melancia",
+    "nome": "Andara Mágica Verde Melancia",
+    "palavrasChave": "Integração Coração-Ação, Equilíbrio Masculino-Feminino, Amor Curador, Diplomacia, Parceria Harmoniosa.",
+    "mensagem": "Eu sou a união sagrada do amor (rosa) com a cura (verde). Eu te ensino a agir a partir de um coração curado e a curar através de uma ação amorosa. Integre suas energias feminina e masculina. A verdadeira força nasce da união, não da divisão. Encontre o equilíbrio.",
+    "acaoPratica": "",
+    "imagem": "/cartas/magica-verde-melancia.jpg"
+  },
+  {
+    "id": "magica-violeta",
+    "nome": "Andara Mágica Violeta",
+    "palavrasChave": "Alquimia Espiritual, Magia Cerimonial, Transmutação Consciente, Conexão com a Linhagem Mágica, Poder Psíquico.",
+    "mensagem": "Você é um alquimista. Sua consciência é a ferramenta que transforma a realidade. Eu amplio seus dons psíquicos e te conecto com a linhagem de magos, bruxas e sacerdotes a que sua alma pertence. Use seu poder com sabedoria, intenção clara e para o bem maior. A magia é real.",
+    "acaoPratica": "",
+    "imagem": "/cartas/magica-violeta.jpg"
+  },
+  {
+    "id": "mel",
+    "nome": "Andara Mel",
+    "palavrasChave": "Doçura da Vida, Recompensa pelo Esforço, Abundância, Prazer, Autocuidado, Energia Solar Suave.",
+    "mensagem": "Permita-se saborear a doçura da vida. Você trabalhou duro. Agora é hora de desfrutar dos frutos do seu esforço. Eu sou a recompensa, o prazer, o lembrete de que a vida também é feita de momentos doces e dourados. Receba a abundância que o universo te oferece com alegria e gratidão.",
+    "acaoPratica": "",
+    "imagem": "/cartas/mel.jpg"
+  },
+  {
+    "id": "merlin-blue",
+    "nome": "Andara Merlin Blue",
+    "palavrasChave": "Magia, Alquimia, Sincronicidade, Sabedoria Oculta, Manifestação, Conexão com Avalon.",
+    "mensagem": "Eu sou a magia do universo ao seu dispor. Desperto o alquimista dentro de você, que transforma desafios em sabedoria e intenção em realidade. Fique atento aos sinais e sincronicidades, pois são os sussurros do universo te guiando. Você é o mestre do seu próprio encantamento.",
+    "acaoPratica": "",
+    "imagem": "/cartas/merlin-blue.jpg"
+  },
+  {
+    "id": "misterio",
+    "nome": "Andara Mistério",
+    "palavrasChave": "O Desconhecido, O Vazio Fértil, Potencial Oculto, Entrega ao Mistério, Intuição Profunda",
+    "mensagem": "Nem tudo precisa ser visto, entendido ou controlado. Há uma grande beleza e poder no mistério. Eu te convido a se sentir confortável no não-saber. Entregue-se ao desconhecido, pois é lá que reside o seu maior potencial. Confie na jornada, mesmo sem ver o caminho.",
+    "acaoPratica": "",
+    "imagem": "/cartas/misterio.jpg"
+  },
+  {
+    "id": "mistica",
+    "nome": "Andara Mística",
+    "palavrasChave": "Intuição Feminina, Experiência Mística, Conhecimento Oculto, A Sacerdotisa Interior, Conexão com o Divino, Devoção.",
+    "mensagem": "A verdade mais profunda não está nos livros, está na sua experiência direta do divino. Eu sou o véu entre os mundos, a guardiã dos mistérios sagrados. Desperto a sacerdotisa dentro de você, que sabe sem saber como sabe. Confie na sua intuição, ela é a sua mais fiel guia espiritual.",
+    "acaoPratica": "",
+    "imagem": "/cartas/mistica.jpg"
+  },
+  {
+    "id": "morango",
+    "nome": "Andara Morango",
+    "palavrasChave": "Autoestima, Doçura, Alegria de Viver, Amor-Próprio, Merecimento, Celebração do Ser.",
+    "mensagem": "Eu trago a doçura e a alegria para a sua jornada. Lembro que você é digno(a) de amor, de carinho e de todas as coisas boas que a vida tem a oferecer. Permita-se receber. Celebre quem você é, com toda a sua beleza única. Ame-se com a mesma intensidade que você ama os outros.",
+    "acaoPratica": "",
+    "imagem": "/cartas/morango.jpg"
+  },
+  {
+    "id": "natureza",
+    "nome": "Andara Natureza",
+    "palavrasChave": "Conexão com a Natureza, Aterramento, Cura, Vitalidade, Crescimento, Paciência dos Ciclos Naturais.",
+    "mensagem": "Desconecte-se do artificial e reconecte-se com o real. Eu sou o pulso da natureza viva. Aterre seus pés na terra, respire o ar puro, sinta a vida ao seu redor. Todas as respostas e toda a cura que você precisa estão nos ciclos simples e sábios da natureza. Volte para casa.",
+    "acaoPratica": "",
+    "imagem": "/cartas/natureza.jpg"
+  },
+  {
+    "id": "oceania",
+    "nome": "Andara Oceania",
+    "palavrasChave": "Inconsciente Coletivo, Fluxo da Vida, Emoções, Biodiversidade, Conexão, Adaptação.",
+    "mensagem": "Você está conectado a uma vasta rede de vida e consciência. Suas emoções são como as correntes oceânicas, parte de um todo maior. Aprenda a fluir com as marés da vida, em vez de lutar contra elas. Há sabedoria na adaptação e força na conexão com todos os seres.",
+    "acaoPratica": "",
+    "imagem": "/cartas/oceania.jpg"
+  },
+  {
+    "id": "oceano-profundo",
+    "nome": "Andara Oceano Profundo",
+    "palavrasChave": "O Inconsciente Profundo, Mistérios da Alma, Silêncio, Sabedoria Oculta, Resiliência na Pressão, Verdades Submersas.",
+    "mensagem": "Não tema as suas próprias profundezas. Nos lugares mais escuros e silenciosos da sua alma residem as verdades mais poderosas e os tesouros mais raros. Eu te dou a força para mergulhar fundo, para suportar a pressão e para trazer à luz a sabedoria que está submersa.",
+    "acaoPratica": "",
+    "imagem": "/cartas/oceano-profundo.jpg"
+  },
+  {
+    "id": "oliva",
+    "nome": "Andara Oliva",
+    "palavrasChave": "Paz, Resiliência, Diplomacia, Esperança, Cura, Perdão.",
+    "mensagem": "Eu carrego a energia da paz e da resiliência da oliveira. Ajudo a encontrar soluções pacíficas para conflitos e a permanecer firme em meio às tempestades. Ofereça um ramo de oliveira, primeiro para si mesmo, depois para os outros. A paz é a maior das vitórias.",
+    "acaoPratica": "",
+    "imagem": "/cartas/oliva.jpg"
+  },
+  {
+    "id": "ouro-rosa",
+    "nome": "Andara Ouro Rosa",
+    "palavrasChave": "Amor-Próprio, Beleza Interior, Graça, Gentileza, Autoestima, Valorização.",
+    "mensagem": "Eu te convido a se apaixonar por si mesmo(a). Eu uno o amor do rosa com a sabedoria e o valor do ouro. Você é precioso(a). Trate-se com a graça e a gentileza que você merece. Sua beleza interior, quando reconhecida, irradia para o mundo.",
+    "acaoPratica": "",
+    "imagem": "/cartas/ouro-rosa.jpg"
+  },
+  {
+    "id": "pessego",
+    "nome": "Andara Pêssego",
+    "palavrasChave": "Autoestima, Gentileza, Cura do Ventre, Criatividade Suave, Acolhimento, Conforto Emocional.",
+    "mensagem": "Eu sou o calor suave do acolhimento. Trago conforto para suas emoções e curo as feridas da sua criança interior e do seu ventre sagrado. Permita-se ser vulnerável e receber o cuidado. A gentileza consigo mesmo é o primeiro passo para a cura.",
+    "acaoPratica": "",
+    "imagem": "/cartas/pessego.jpg"
+  },
+  {
+    "id": "pistache",
+    "nome": "Andara Pistache",
+    "palavrasChave": "Cura Suave, Crescimento, Paciência, Saúde do Coração, Renovação, Nutrição.",
+    "mensagem": "A cura é um processo, como o brotar de uma semente. Eu nutro seu coração e seu corpo com uma energia de crescimento suave e constante. Não tenha pressa. Apenas permita-se ser cuidado e confie no processo de renovação. Você está florescendo no seu próprio tempo.",
+    "acaoPratica": "",
+    "imagem": "/cartas/pistache.jpg"
+  },
+  {
+    "id": "platina",
+    "nome": "Andara Platina",
+    "palavrasChave": "Frequência Crística Feminina, Graça, Suavidade, Compaixão Divina, Conexão com o Divino Feminino.",
+    "mensagem": "Eu trago a frequência da graça e da compaixão do Divino Feminino. Eu te ajudo a equilibrar seu poder com suavidade e a liderar com o coração. A verdadeira força não grita; ela age com graça, amor e uma sabedoria silenciosa.",
+    "acaoPratica": "",
+    "imagem": "/cartas/platina.jpg"
+  },
+  {
+    "id": "prata",
+    "nome": "Andara Prata",
+    "palavrasChave": "Energia da Lua, Intuição, Ciclos Femininos, Inconsciente, Emoções, Clarividência.",
+    "mensagem": "Assim como a Lua, você tem fases. Honre seus ciclos. Eu ilumino as profundezas do seu inconsciente e afio sua intuição. Preste atenção aos seus sonhos e aos seus sentimentos; eles são a linguagem da sua alma. Mergulhe na sua magia lunar.",
+    "acaoPratica": "",
+    "imagem": "/cartas/prata.jpg"
+  },
+  {
+    "id": "preto",
+    "nome": "Andara Preto",
+    "palavrasChave": "Proteção, Aterramento Profundo, Vazio Criador, Mistério, Absorção de Negatividade, Limpeza.",
+    "mensagem": "Eu sou seu escudo de proteção e seu portal para o Vazio. Eu absorvo toda a negatividade ao seu redor, criando um espaço seguro para você ser quem é. Não tema a escuridão, pois ela é o útero de toda a criação. É no silêncio do Vazio que você encontra sua verdadeira força.",
+    "acaoPratica": "",
+    "imagem": "/cartas/preto.jpg"
+  },
+  {
+    "id": "rainbow-arco-iris",
+    "nome": "Andara Rainbow (Arco-Íris)",
+    "palavrasChave": "Integração, Alegria, Totalidade, Esperança, Inclusão, Alinhamento de Chakras.",
+    "mensagem": "Eu sou a união de todas as cores, a celebração da diversidade dentro de você e no mundo. Eu integro todas as partes do seu ser em um todo harmonioso e alinho todos os seus chakras. Lembre-se que após a chuva, sempre vem o arco-íris. A alegria e a totalidade são seu estado natural.",
+    "acaoPratica": "",
+    "imagem": "/cartas/rainbow-arco-iris.jpg"
+  },
+  {
+    "id": "rosa-lady-nellie",
+    "nome": "Andara Rosa Lady Nellie",
+    "palavrasChave": "Amor Incondicional, Compaixão, Cura Emocional, Perdão, Acolhimento, Divino Feminino.",
+    "mensagem": "Eu sou o abraço que sua alma precisa. Permita que minha energia suave dissolva as muralhas do seu coração. Eu te ajudo a perdoar, a se acolher e a emanar amor incondicional para todos os seres, começando por você. Você é digno de todo amor.",
+    "acaoPratica": "",
+    "imagem": "/cartas/rosa-lady-nellie.jpg"
+  },
+  {
+    "id": "roxa-dragonfly-libelula-roxa",
+    "nome": "Andara Roxa Dragonfly (Libélula Roxa)",
+    "palavrasChave": "Ilusão, Transformação, Multidimensionalidade, Magia do Ar, Adaptabilidade, Ver Além do Véu.",
+    "mensagem": "As aparências enganam. Eu sou a magia que te ajuda a ver através do véu da ilusão e a compreender as verdades mais profundas. A mudança é a única constante; aprenda a dançar com ela. Adapte-se, transforme-se e lembre-se de que você pode acessar outras dimensões da realidade.",
+    "acaoPratica": "",
+    "imagem": "/cartas/roxa-dragonfly-libelula-roxa.jpg"
+  },
+  {
+    "id": "ruby-rubi",
+    "nome": "Andara Ruby (Rubi)",
+    "palavrasChave": "Nobreza de Espírito, Devoção, Paixão Real, Liderança do Coração, Força Vital, Coragem.",
+    "mensagem": "Reine sobre o seu próprio coração. Eu desperto a nobreza da sua alma e a paixão devotada a um propósito maior. Lidere sua vida não com a cabeça, mas com a coragem e a integridade do seu coração. Sua força vital é um tesouro; use-a com sabedoria e devoção.",
+    "acaoPratica": "",
+    "imagem": "/cartas/ruby-rubi.jpg"
+  },
+  {
+    "id": "primavera",
+    "nome": "Andara Primavera",
+    "palavrasChave": "Renascimento, Novos Começos, Crescimento, Florescimento, Otimismo, Vitalidade, Oportunidade",
+    "mensagem": "O inverno da sua alma terminou. Eu sou a energia vibrante da primavera que chega para despertar o que estava adormecido em você. É tempo de florescer. Deixe para trás a casca do velho e abrace o potencial de tudo o que é novo. A vida te chama para crescer.",
+    "acaoPratica": "",
+    "imagem": "/cartas/primavera.jpg"
+  },
+  {
+    "id": "selenita-branca",
+    "nome": "Andara Selenita Branca",
+    "palavrasChave": "Limpeza Energética, Purificação, Conexão Angélica, Clareza da Mente Superior, Paz Celestial.",
+    "mensagem": "Eu sou um banho de luz líquida para a sua alma. Permita que minha energia purifique seu campo áurico de toda estática, dúvida e negatividade. Eu limpo o caminho para que você possa se conectar claramente com seus guias e com a sua própria luz. Você é pura luz.",
+    "acaoPratica": "",
+    "imagem": "/cartas/selenita-branca.jpg"
+  },
+  {
+    "id": "sereia",
+    "nome": "Andara Sereia",
+    "palavrasChave": "Emoções Profundas, Mistério, Sedução Sagrada, Sabedoria Oculta, Fluidez, Liberdade Emocional.",
+    "mensagem": "Mergulhe fundo nas águas do seu ser. Não tema o mistério de suas próprias emoções. Eu te ensino a nadar nelas com graça e liberdade, a usar seu poder de atração de forma sagrada e a ouvir a sabedoria que canta nas profundezas de sua alma. Liberte sua natureza selvagem e aquática.",
+    "acaoPratica": "",
+    "imagem": "/cartas/sereia.jpg"
+  },
+  {
+    "id": "sweet",
+    "nome": "Andara Sweet",
+    "palavrasChave": "Doçura, Inocência, Gentileza, Prazeres Simples, Autocuidado, Amor Gentil.",
+    "mensagem": "Abrace a doçura. A vida te convida a ser mais gentil consigo mesmo(a). Eu te lembro da beleza dos prazeres simples e do poder curador da gentileza. Você não precisa ser duro(a) para ser forte. A verdadeira força reside na suavidade do coração.",
+    "acaoPratica": "",
+    "imagem": "/cartas/sweet.jpg"
+  },
+  {
+    "id": "turquesa",
+    "nome": "Andara Turquesa",
+    "palavrasChave": "Proteção, Comunicação da Alma, Cura Holística, Sabedoria Ancestral (Xamânica), Ponte Céu-Terra.",
+    "mensagem": "Eu sou seu escudo de proteção e sua ponte para a sabedoria. Fale a verdade da sua alma, pois ela é o seu maior guia. Eu te conecto com a sabedoria do Céu e a força da Terra, para que você caminhe pelo seu caminho sagrado com proteção, cura e integridade.",
+    "acaoPratica": "",
+    "imagem": "/cartas/turquesa.jpg"
+  },
+  {
+    "id": "unicornio",
+    "nome": "Andara Unicórnio",
+    "palavrasChave": "Pureza de Coração, Magia, Milagres, Inocência, Conexão com Reinos Mágicos, Poder da Intenção Pura.",
+    "mensagem": "Acredite na magia. Acredite em milagres. Eu sou a prova de que o impossível é apenas uma questão de perspectiva. Purifique seu coração de dúvidas e cinismo, e você verá que a magia está em toda parte. Sua intenção pura é a varinha de condão mais poderosa que existe.",
+    "acaoPratica": "",
+    "imagem": "/cartas/unicornio.jpg"
+  },
+  {
+    "id": "verde-esmeralda",
+    "nome": "Andara Verde Esmeralda",
+    "palavrasChave": "Cura, Compaixão, Abundância, Conexão com Arcanjo Rafael, Crescimento, Amor Curador.",
+    "mensagem": "Abra seu coração para a cura. Eu sou o raio verde que restaura o equilíbrio e a harmonia em seu ser. Permita que o amor flua através de você como a seiva de uma árvore, nutrindo cada parte sua. A abundância do universo é seu direito divino. Receba-a.",
+    "acaoPratica": "",
+    "imagem": "/cartas/verde-esmeralda.jpg"
+  },
+  {
+    "id": "verde-floresta",
+    "nome": "Andara Verde Floresta",
+    "palavrasChave": "Força Vital da Natureza, Aterramento, Respiração Profunda, Cura Planetária, Resiliência, Vigor.",
+    "mensagem": "Respire fundo. Sinta a força ancestral das florestas correndo em suas veias. Eu sou a vitalidade e a resiliência da natureza. Eu te ajudo a fortalecer suas raízes e a encontrar a força para resistir a qualquer tempestade. Você é mais forte do que imagina.",
+    "acaoPratica": "",
+    "imagem": "/cartas/verde-floresta.jpg"
+  },
+  {
+    "id": "verde-jade",
+    "nome": "Andara Verde Jade",
+    "palavrasChave": "Sorte, Harmonia, Equilíbrio, Paz Interior, Prosperidade Serena, Saúde.",
+    "mensagem": "A verdadeira prosperidade nasce da harmonia interior. Eu acalmo sua alma e equilibro suas energias, criando um estado de serenidade a partir do qual a sorte e a abundância podem fluir para você sem esforço. Encontre sua paz, e você encontrará sua fortuna.",
+    "acaoPratica": "",
+    "imagem": "/cartas/verde-jade.jpg"
+  },
+  {
+    "id": "verde-menta",
+    "nome": "Andara Verde Menta",
+    "palavrasChave": "Clareza Mental, Purificação, Renovação, Sopro de Ar Fresco, Saúde, Limpeza.",
+    "mensagem": "É hora de um sopro de ar fresco. Eu limpo as teias de aranha dos seus pensamentos e purifico seu campo energético de velhas estagnações. Deixe a clareza e a renovação entrarem. Uma nova perspectiva e uma nova vitalidade estão disponíveis para você agora.",
+    "acaoPratica": "",
+    "imagem": "/cartas/verde-menta.jpg"
+  },
+  {
+    "id": "verde-limao",
+    "nome": "Andara Verde-Limão",
+    "palavrasChave": "Rejuvenescimento, Entusiasmo, Nova Perspectiva, Energia Cítrica, Quebra da Rotina, Alegria.",
+    "mensagem": "Saia da rotina! Eu sou o entusiasmo que te convida a experimentar algo novo e a ver o mundo com outros olhos. Trago uma energia de rejuvenescimento para sua vida. Permita-se sentir um novo gosto, ouvir uma nova música, seguir um novo caminho. A vida é para ser explorada com entusiasmo!",
+    "acaoPratica": "",
+    "imagem": "/cartas/verde-limao.jpg"
+  },
+  {
+    "id": "vermelha-opaca",
+    "nome": "Andara Vermelha Opaca",
+    "palavrasChave": "Aterramento Físico, Força Vital, Sobrevivência, Raízes, Conexão com o Corpo Físico, Vigor.",
+    "mensagem": "Volte para o seu corpo. Sinta seu sangue pulsando, seus pés firmes no chão. Eu sou a força da vida em sua forma mais primordial. Eu te ajudo a ancorar seu espírito na matéria e a encontrar a força e o vigor para enfrentar os desafios do mundo físico. Honre seu templo.",
+    "acaoPratica": "",
+    "imagem": "/cartas/vermelha-opaca.jpg"
+  },
+  {
+    "id": "violeta-de-saint-germain",
+    "nome": "Andara Violeta de Saint Germain",
+    "palavrasChave": "Alquimia da Alma, Transmutação Sábia, Liberdade Espiritual, Sétimo Raio, Mestria, Perdão.",
+    "mensagem": "Você é o alquimista da sua própria vida. Eu te entrego a Chama Violeta, a ferramenta da transmutação e da liberdade. Use-a com sabedoria para transformar todo chumbo do medo e da dor em ouro de sabedoria e compaixão. Perdoe, liberte-se e reclame sua mestria.",
+    "acaoPratica": "",
+    "imagem": "/cartas/violeta-de-saint-germain.jpg"
+  },
+  {
+    "id": "xama",
+    "nome": "Andara Xamã",
+    "palavrasChave": "Conexão com a Terra, Cura Animal, Sabedoria da Natureza, Jornada Interior, Mundo Espiritual, Ponte entre Mundos.",
+    "mensagem": "O mundo ao seu redor está vivo e fala com você. Eu abro seus ouvidos para ouvir a linguagem do vento, das árvores e dos animais. Eu sou o guia para a sua jornada interior, a ponte entre o seu mundo e o mundo espiritual. Confie na sabedoria da natureza. Ela é sua maior professora.",
+    "acaoPratica": "",
+    "imagem": "/cartas/xama.jpg"
+  },
+  {
+    "id": "gelo-cosmico",
+    "nome": "Andara Gelo Cósmico",
+    "palavrasChave": "Verdade Universal, Lógica Fria, Perspectiva Elevada, Clareza Imparcial, Desapego Emocional, Consciência Superior.",
+    "mensagem": "Afaste-se do calor do drama. Para entender verdadeiramente sua situação, você precisa observá-la de uma perspectiva mais elevada e fria – a da verdade universal, livre da emoção. Eu te ajudo a cristalizar seus sentimentos para que você possa observá-los, e não se afogar neles. A clareza é poder.",
+    "acaoPratica": "",
+    "imagem": "/cartas/gelo-cosmico.jpg"
+  },
+  {
+    "id": "orquidea",
+    "nome": "Andara Orquídea",
+    "palavrasChave": "Beleza, Sensualidade Sagrada, Criatividade Divina, Luxúria, Singularidade, Autoestima.",
+    "mensagem": "Celebre sua beleza única e exótica. Você é uma flor rara. Eu desperto sua sensualidade sagrada e sua criatividade mais refinada. Permita-se florescer em toda a sua glória, sem se comparar com ninguém. Sua singularidade é o seu maior poder.",
+    "acaoPratica": "",
+    "imagem": "/cartas/orquidea.jpg"
+  }
+]
