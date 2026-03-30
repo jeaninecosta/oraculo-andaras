@@ -71,7 +71,7 @@ export default function Landing() {
                 </li>
               ))}
             </ul>
-            <Link to="/login"
+            <Link to="/login?plano=basico"
               className="block text-center border border-dourado/30 hover:border-dourado text-dourado py-3 rounded-xl text-sm transition-all">
               Assinar Básico
             </Link>
@@ -97,7 +97,7 @@ export default function Landing() {
                 </li>
               ))}
             </ul>
-            <Link to="/login"
+            <Link to="/login?plano=pro"
               className="block text-center bg-dourado hover:bg-dourado-claro text-mistico-fundo font-semibold py-3 rounded-xl text-sm transition-all">
               Assinar Pro
             </Link>

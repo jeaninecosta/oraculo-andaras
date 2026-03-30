@@ -7,7 +7,7 @@ interface AuthCtx {
   perfil: Perfil | null
   loading: boolean
   signIn: (email: string, senha: string) => Promise<string | null>
-  signUp: (email: string, senha: string, nome: string) => Promise<string | null>
+  signUp: (email: string, senha: string, nome: string, plano?: 'basico' | 'pro') => Promise<string | null>
   signOut: () => Promise<void>
   isPro: boolean
 }
@@ -49,7 +49,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return error?.message ?? null
   }
 
-  async function signUp(email: string, senha: string, nome: string) {
+  async function signUp(email: string, senha: string, nome: string, plano: 'basico' | 'pro' = 'basico') {
     const { data, error } = await supabase.auth.signUp({ email, password: senha })
     if (error) return error.message
     if (data.user) {
@@ -57,8 +57,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         id: data.user.id,
         email,
         nome,
-        plano: 'basico',
-        ativo: false,
+        plano,
+        ativo: true, // TODO: substituir por verificação Stripe ao integrar pagamento
       })
     }
     return null

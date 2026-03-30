@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate, Link, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 
 export default function Login() {
   const { signIn, signUp, user } = useAuth()
   const navigate = useNavigate()
-  const [modo, setModo] = useState<'login' | 'cadastro'>('login')
+  const [searchParams] = useSearchParams()
+  const planoSelecionado = (searchParams.get('plano') === 'pro' ? 'pro' : 'basico') as 'basico' | 'pro'
+  const [modo, setModo] = useState<'login' | 'cadastro'>(searchParams.get('plano') ? 'cadastro' : 'login')
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [nome, setNome] = useState('')
@@ -26,7 +28,7 @@ export default function Login() {
       else navigate('/app')
     } else {
       if (!nome.trim()) { setErro('Informe seu nome.'); setLoading(false); return }
-      const err = await signUp(email, senha, nome)
+      const err = await signUp(email, senha, nome, planoSelecionado)
       if (err) setErro('Erro ao criar conta. Verifique os dados.')
       else setSucesso(true)
     }
@@ -55,6 +57,16 @@ export default function Login() {
         </div>
 
         <div className="glass rounded-2xl p-8">
+          {modo === 'cadastro' && (
+            <div className={`mb-4 text-center text-xs px-3 py-2 rounded-xl ${
+              planoSelecionado === 'pro'
+                ? 'bg-dourado/10 text-dourado border border-dourado/20'
+                : 'bg-white/5 text-cristal/50 border border-white/10'
+            }`}>
+              {planoSelecionado === 'pro' ? '⭐ Plano Profissional (PRO)' : 'Plano Básico'}
+              {' '}· <span className="opacity-60">modo teste ativo</span>
+            </div>
+          )}
           <div className="flex mb-6 bg-mistico-escuro rounded-xl p-1">
             {(['login', 'cadastro'] as const).map(m => (
               <button key={m} onClick={() => setModo(m)}
