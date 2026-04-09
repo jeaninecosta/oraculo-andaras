@@ -99,54 +99,54 @@ export default function Relatorios() {
           <p className="text-cristal/30 text-sm mt-1">Os relatórios são gerados nas consultas de clientes Pro.</p>
         </div>
       ) : (
-        <div className="grid md:grid-cols-2 gap-4">
-          {/* Lista */}
-          <div className="space-y-2">
+        <div className="space-y-4">
+          {/* Lista horizontal compacta */}
+          <div className="flex flex-wrap gap-2">
             {relatorios.map(r => (
               <button key={r.id} onClick={() => abrirRelatorio(r)}
-                className={`w-full glass rounded-xl p-4 text-left transition-all hover:border-dourado/30 ${
-                  aberto?.id === r.id ? 'border-dourado/40 bg-dourado/5' : ''
+                className={`glass rounded-xl px-4 py-2.5 text-left transition-all hover:border-dourado/30 ${
+                  aberto?.id === r.id ? 'border-dourado/50 bg-dourado/10 text-dourado' : 'text-cristal/70'
                 }`}>
-                <p className="font-medium text-cristal">{r.cliente_nome}</p>
-                <p className="text-cristal/40 text-xs mt-0.5">
-                  {new Date(r.criado_em).toLocaleDateString('pt-BR')} · {r.tiragem.length} cartas
+                <p className="font-medium text-sm">{r.cliente_nome}</p>
+                <p className="text-cristal/40 text-xs">
+                  {new Date(r.criado_em).toLocaleDateString('pt-BR')} · {r.tiragem.length} carta{r.tiragem.length > 1 ? 's' : ''}
                 </p>
               </button>
             ))}
           </div>
 
-          {/* Editor */}
+          {/* Editor em tela cheia */}
           {aberto ? (
-            <div className="glass rounded-2xl p-5 space-y-4">
+            <div className="glass rounded-2xl p-6 space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-serif text-dourado text-lg">{aberto.cliente_nome}</h3>
-                  <p className="text-cristal/40 text-xs">{new Date(aberto.criado_em).toLocaleDateString('pt-BR')}</p>
+                  <h3 className="font-serif text-dourado text-xl">{aberto.cliente_nome}</h3>
+                  <p className="text-cristal/40 text-xs mt-0.5">{new Date(aberto.criado_em).toLocaleDateString('pt-BR')} · {aberto.tiragem.length} carta{aberto.tiragem.length > 1 ? 's' : ''}</p>
                 </div>
-                <button onClick={() => excluir(aberto.id)} className="text-cristal/30 hover:text-red-400 text-sm transition-colors">✕</button>
+                <div className="flex items-center gap-2">
+                  <button onClick={copiarTexto}
+                    className="glass hover:bg-white/10 px-3 py-1.5 rounded-xl text-xs transition-all text-cristal/70">
+                    {copiado ? '✓ Copiado' : '📋 Copiar'}
+                  </button>
+                  <button onClick={exportarPDF}
+                    className="glass hover:bg-white/10 px-3 py-1.5 rounded-xl text-xs transition-all text-cristal/70">
+                    📄 PDF
+                  </button>
+                  <button onClick={salvarEdicao} disabled={salvando}
+                    className="bg-dourado/10 hover:bg-dourado/20 border border-dourado/20 text-dourado px-3 py-1.5 rounded-xl text-xs transition-all disabled:opacity-50">
+                    {salvando ? 'Salvando...' : '💾 Salvar'}
+                  </button>
+                  <button onClick={() => excluir(aberto.id)} className="text-cristal/30 hover:text-red-400 text-sm transition-colors ml-1">✕</button>
+                </div>
               </div>
 
               <textarea ref={textareaRef} value={texto} onChange={e => setTexto(e.target.value)}
-                className="w-full bg-mistico-escuro border border-white/10 rounded-xl p-3 text-cristal text-sm resize-none focus:outline-none focus:border-dourado/30 min-h-[300px]" />
-
-              <div className="flex gap-2 flex-wrap">
-                <button onClick={salvarEdicao} disabled={salvando}
-                  className="flex-1 bg-dourado/10 hover:bg-dourado/20 border border-dourado/20 text-dourado py-2 rounded-xl text-sm transition-all disabled:opacity-50">
-                  {salvando ? 'Salvando...' : '💾 Salvar'}
-                </button>
-                <button onClick={copiarTexto}
-                  className="flex-1 glass hover:bg-white/10 py-2 rounded-xl text-sm transition-all text-cristal/70">
-                  {copiado ? '✓ Copiado!' : '📋 Copiar'}
-                </button>
-                <button onClick={exportarPDF}
-                  className="flex-1 glass hover:bg-white/10 py-2 rounded-xl text-sm transition-all text-cristal/70">
-                  📄 PDF
-                </button>
-              </div>
+                className="w-full bg-black/20 border border-white/10 rounded-xl p-4 text-cristal text-sm resize-none focus:outline-none focus:border-dourado/30 leading-relaxed"
+                style={{ minHeight: '60vh' }} />
             </div>
           ) : (
-            <div className="glass rounded-2xl p-8 flex items-center justify-center text-cristal/30 text-sm">
-              Selecione um relatório para editar
+            <div className="glass rounded-2xl p-12 flex items-center justify-center text-cristal/30 text-sm">
+              Selecione um relatório acima para visualizar e editar
             </div>
           )}
         </div>

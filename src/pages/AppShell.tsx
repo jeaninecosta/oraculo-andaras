@@ -1,6 +1,7 @@
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { useState } from 'react'
+import FundoEtereo from '../components/FundoEtereo'
 
 export default function AppShell() {
   const { perfil, signOut, isPro } = useAuth()
@@ -21,10 +22,12 @@ export default function AppShell() {
 
   return (
     <div className="min-h-screen bg-mistico-fundo flex flex-col"
-      style={{ background: 'radial-gradient(ellipse at top, #1a0a2e 0%, #0d0618 60%)' }}>
+      style={{ backgroundColor: '#080414' }}>
+
+      <FundoEtereo />
 
       {/* Header */}
-      <header className="glass border-b border-white/5 px-4 py-3 flex items-center justify-between sticky top-0 z-40">
+      <header className="glass border-b border-white/5 px-4 py-3 flex items-center justify-between sticky top-0 z-40 relative">
         <span className="font-serif text-dourado text-xl">✦ Oráculo Andara</span>
 
         {/* Nav desktop */}
@@ -67,7 +70,7 @@ export default function AppShell() {
       )}
 
       {/* Conteúdo */}
-      <main className="flex-1 p-4 md:p-8 max-w-4xl mx-auto w-full">
+      <main className="flex-1 p-4 md:p-8 max-w-4xl mx-auto w-full relative z-10">
         <Outlet />
       </main>
     </div>

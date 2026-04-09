@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import { supabase } from '../lib/supabase'
 import cartas from '../data/cartas.json'
+import type { ClientePro } from '../lib/supabase'
 
 type Modalidade = 'uma' | 'tres' | 'cinco' | 'sete'
 
@@ -36,12 +39,67 @@ function sortear(qtd: number): Carta[] {
   return embaralhado.slice(0, qtd) as Carta[]
 }
 
+function gerarTextoCartas(cartas: Carta[], posicoes: string[]): string {
+  return cartas.map((carta, i) => {
+    const posicao = posicoes[i] ? `${posicoes[i].toUpperCase()}\n` : ''
+    return `${posicao}${carta.nome}\nPalavras-chave: ${carta.palavrasChave}\n\nMensagem:\n${carta.mensagem}\n\nAção Prática:\n${carta.acaoPratica}`
+  }).join('\n\n──────────────────────────────\n\n')
+}
+
+async function gerarSinteseIA(cartas: Carta[], posicoes: string[], clienteNome: string): Promise<string> {
+  try {
+    const res = await fetch('/api/gerar-sintese', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ cartas, posicoes, cliente_nome: clienteNome }),
+    })
+    const data = await res.json()
+    return data.sintese ?? ''
+  } catch {
+    return ''
+  }
+}
+
 export default function Consulta() {
-  const { isPro, perfil } = useAuth()
+  const { isPro, perfil, user } = useAuth()
+  const location = useLocation()
+  const clienteViaNav = (location.state as { cliente?: ClientePro } | null)?.cliente ?? null
+
   const [modalidade, setModalidade] = useState<Modalidade | null>(null)
   const [cartasSorteadas, setCartasSorteadas] = useState<Carta[]>([])
   const [reveladas, setReveladas] = useState<boolean[]>([])
   const [cartaAberta, setCartaAberta] = useState<number | null>(null)
+  const [relatorioSalvo, setRelatorioSalvo] = useState(false)
+
+  const posicoes = modalidade ? getPosicoes(MODALIDADES.find(x => x.id === modalidade)!.qtd) : []
+
+  // Salva relatório automaticamente quando todas as cartas são reveladas
+  useEffect(() => {
+    if (
+      reveladas.length > 0 &&
+      reveladas.every(r => r) &&
+      clienteViaNav &&
+      user &&
+      !relatorioSalvo
+    ) {
+      setRelatorioSalvo(true)
+      const textoCartas = gerarTextoCartas(cartasSorteadas, posicoes)
+      gerarSinteseIA(cartasSorteadas, posicoes, clienteViaNav.nome).then(sintese => {
+        const textoFinal = sintese
+          ? `SÍNTESE DA LEITURA\n\n${sintese}\n\n══════════════════════════════\n\nCARTAS DA TIRAGEM\n\n${textoCartas}`
+          : `CARTAS DA TIRAGEM\n\n${textoCartas}`
+        supabase.from('relatorios').insert({
+          user_id: user.id,
+          cliente_id: clienteViaNav.id,
+          cliente_nome: clienteViaNav.nome,
+          tiragem: cartasSorteadas.map((_, i) => i),
+          texto_editado: textoFinal,
+        }).then(({ error }) => {
+          if (error) console.error('Erro ao salvar relatório:', JSON.stringify(error))
+        })
+      })
+    }
+  }, [reveladas])
 
   function iniciarConsulta(m: Modalidade) {
     const qtd = MODALIDADES.find(x => x.id === m)!.qtd
@@ -62,9 +120,8 @@ export default function Consulta() {
     setCartasSorteadas([])
     setReveladas([])
     setCartaAberta(null)
+    setRelatorioSalvo(false)
   }
-
-  const posicoes = modalidade ? getPosicoes(MODALIDADES.find(x => x.id === modalidade)!.qtd) : []
 
   // Tela de seleção de modalidade
   if (!modalidade) return (
@@ -72,7 +129,9 @@ export default function Consulta() {
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-serif text-gradient mb-2">Consulta Oracular</h1>
         <p className="text-cristal/50 text-sm">
-          {perfil?.nome ? `Olá, ${perfil.nome}. ` : ''}Escolha sua tiragem
+          {clienteViaNav
+            ? `Consulta para ${clienteViaNav.nome}`
+            : perfil?.nome ? `Olá, ${perfil.nome}. Escolha sua tiragem` : 'Escolha sua tiragem'}
         </p>
       </div>
 
@@ -128,7 +187,8 @@ export default function Consulta() {
       <div className={`grid gap-4 justify-items-center ${
         cartasSorteadas.length === 1 ? 'grid-cols-1' :
         cartasSorteadas.length <= 3 ? 'grid-cols-3' :
-        'grid-cols-3 md:grid-cols-4'
+        cartasSorteadas.length === 5 ? 'grid-cols-3 md:grid-cols-5' :
+        'grid-cols-4 md:grid-cols-7'
       }`}>
         {cartasSorteadas.map((carta, i) => (
           <div key={i} className="flex flex-col items-center gap-2 w-full max-w-[140px]">
@@ -196,8 +256,13 @@ export default function Consulta() {
 
       {/* Todas reveladas */}
       {reveladas.length > 0 && reveladas.every(r => r) && cartasSorteadas.length > 1 && (
-        <div className="text-center py-4">
-          <p className="text-cristal/40 text-sm mb-3">Todas as cartas foram reveladas</p>
+        <div className="text-center py-4 space-y-3">
+          {relatorioSalvo && clienteViaNav && (
+            <p className="text-dourado/70 text-xs">
+              ✦ Relatório salvo para {clienteViaNav.nome}
+            </p>
+          )}
+          <p className="text-cristal/40 text-sm">Todas as cartas foram reveladas</p>
           <button onClick={reiniciar}
             className="bg-dourado/10 hover:bg-dourado/20 border border-dourado/20 text-dourado px-6 py-2 rounded-xl text-sm transition-all">
             Nova consulta

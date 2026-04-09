@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, Link, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import FundoEtereo from '../components/FundoEtereo'
 
 export default function Login() {
   const { signIn, signUp, user } = useAuth()
@@ -48,9 +49,9 @@ export default function Login() {
   )
 
   return (
-    <div className="min-h-screen bg-mistico-fundo flex items-center justify-center p-4"
-      style={{ background: 'radial-gradient(ellipse at top, #2d1b69 0%, #0d0618 70%)' }}>
-      <div className="w-full max-w-sm">
+    <div className="min-h-screen flex items-center justify-center p-4" style={{ backgroundColor: '#080414' }}>
+      <FundoEtereo />
+      <div className="relative z-10 w-full max-w-sm">
         <div className="text-center mb-8">
           <Link to="/" className="text-dourado font-serif text-3xl">✦ Oráculo Andara</Link>
           <p className="text-cristal/50 text-sm mt-1">Uma ferramenta de orientação e frequência</p>

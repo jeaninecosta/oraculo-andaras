@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,14 +6,134 @@
 
 @layer base {
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { @apply bg-mistico-fundo text-cristal font-sans; }
-  h1, h2, h3 { @apply font-serif; }
+  body { @apply bg-mistico-fundo text-cristal font-sans; font-weight: 500; }
+  h1, h2, h3 {
+    @apply font-serif;
+    font-weight: 700;
+  }
+  p, li { text-shadow: 0 1px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7); }
 }
 
 @layer utilities {
-  .glass        { @apply bg-white/5 backdrop-blur-md border border-white/10; }
-  .glass-dourado { @apply bg-dourado/5 backdrop-blur-md border border-dourado/20; }
+  .glass         { @apply bg-black/30 backdrop-blur-md border border-white/15; }
+  .glass-dourado { @apply bg-black/25 backdrop-blur-md border border-dourado/30; }
   .text-gradient {
     @apply bg-gradient-to-r from-dourado via-dourado-claro to-dourado bg-clip-text text-transparent;
+    filter: drop-shadow(0 0 8px rgba(212,175,55,0.6));
   }
+  .text-dourado-glow {
+    text-shadow: 0 0 12px rgba(212,175,55,0.7), 0 0 30px rgba(212,175,55,0.3), 0 2px 8px rgba(0,0,0,0.9);
+  }
+}
+
+/* ── Filtro de contraste na imagem de fundo ────────────────────── */
+.fundo-nebula {
+  position: absolute;
+  inset: 0;
+  background-image: url(/galaxy-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.2) saturate(1.35) brightness(0.88);
+}
+
+/* ── Sombra topo (header legível) ──────────────────────────────── */
+.fundo-borda-topo {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(5,2,20,0.82) 0%, transparent 18%);
+}
+
+/* ── Sombra base ───────────────────────────────────────────────── */
+.fundo-borda-base {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5,2,20,0.75) 0%, transparent 20%);
+}
+
+/* ── Orbs etéreos ──────────────────────────────────────────────── */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  will-change: transform;
+}
+.orb-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(100,60,200,0.45), transparent 70%);
+  top: -180px; left: -150px;
+  animation: orb1 22s ease-in-out infinite;
+}
+.orb-2 {
+  width: 450px; height: 450px;
+  background: radial-gradient(circle, rgba(180,60,160,0.35), transparent 70%);
+  bottom: -120px; right: -100px;
+  animation: orb2 28s ease-in-out infinite;
+}
+.orb-3 {
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, rgba(40,80,200,0.35), transparent 70%);
+  top: 40%; left: 35%;
+  animation: orb3 18s ease-in-out infinite;
+}
+.orb-4 {
+  width: 260px; height: 260px;
+  background: radial-gradient(circle, rgba(200,100,220,0.30), transparent 70%);
+  top: 15%; right: 8%;
+  animation: orb4 35s ease-in-out infinite;
+}
+.orb-5 {
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(60,30,180,0.40), transparent 70%);
+  bottom: 10%; left: 15%;
+  animation: orb5 24s ease-in-out infinite;
+}
+.orb-6 {
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(220,80,180,0.28), transparent 70%);
+  top: 60%; right: 20%;
+  animation: orb6 30s ease-in-out infinite;
+}
+.orb-7 {
+  width: 280px; height: 280px;
+  background: radial-gradient(circle, rgba(80,120,240,0.30), transparent 70%);
+  top: 30%; left: 5%;
+  animation: orb7 26s ease-in-out infinite;
+}
+
+@keyframes orb1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33%      { transform: translate(90px, 70px) scale(1.1); }
+  66%      { transform: translate(-60px, 120px) scale(0.9); }
+}
+@keyframes orb2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50%      { transform: translate(-120px, -80px) scale(1.2); }
+}
+@keyframes orb3 {
+  0%, 100% { transform: translate(0px, 0px) scale(1);       opacity: 0.08; }
+  50%      { transform: translate(70px, -90px) scale(1.35); opacity: 0.15; }
+}
+@keyframes orb4 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  25%      { transform: translate(-90px, 60px) scale(1.15); }
+  75%      { transform: translate(70px, -70px) scale(0.85); }
+}
+@keyframes orb5 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  40%      { transform: translate(100px, -60px) scale(1.1); }
+  70%      { transform: translate(-50px, -30px) scale(0.9); }
+}
+@keyframes orb6 {
+  0%, 100% { transform: translate(0px, 0px) scale(1);   opacity: 0.06; }
+  50%      { transform: translate(-80px, -100px) scale(1.2); opacity: 0.12; }
+}
+@keyframes orb7 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  60%      { transform: translate(60px, 80px) scale(1.1); }
+}
+
+@keyframes cintillar {
+  0%, 100% { opacity: 0.1;  transform: scale(1); }
+  50%      { opacity: 0.85; transform: scale(1.8); }
 }

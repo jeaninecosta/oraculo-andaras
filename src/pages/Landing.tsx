@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
+import FundoEtereo from '../components/FundoEtereo'
 
 export default function Landing() {
   return (
-    <div className="min-h-screen" style={{ background: 'radial-gradient(ellipse at top, #2d1b69 0%, #0d0618 70%)' }}>
+    <div className="min-h-screen relative" style={{ backgroundColor: '#080414' }}>
+      <FundoEtereo />
 
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 max-w-5xl mx-auto">

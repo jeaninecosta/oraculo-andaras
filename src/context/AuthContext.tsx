@@ -50,18 +50,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }
 
   async function signUp(email: string, senha: string, nome: string, plano: 'basico' | 'pro' = 'basico') {
-    const { data, error } = await supabase.auth.signUp({ email, password: senha })
-    if (error) return error.message
-    if (data.user) {
-      await supabase.from('perfis').insert({
-        id: data.user.id,
-        email,
-        nome,
-        plano,
-        ativo: true, // TODO: substituir por verificação Stripe ao integrar pagamento
-      })
-    }
-    return null
+    const { error } = await supabase.auth.signUp({
+      email,
+      password: senha,
+      options: { data: { nome, plano } }, // lidos pela trigger handle_new_user no Supabase
+    })
+    return error?.message ?? null
   }
 
   async function signOut() {

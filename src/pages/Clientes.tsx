@@ -28,13 +28,13 @@ export default function Clientes() {
   async function salvar() {
     if (!nome.trim() || !dataNasc) return
     setSalvando(true)
-    await supabase.from('clientes_pro').insert({
+    const { error } = await supabase.from('clientes_pro').insert({
       user_id: user!.id,
       nome: nome.trim(),
       data_nascimento: dataNasc,
     })
-    setNome(''); setDataNasc(''); setModal(false)
-    await carregar()
+    if (error) console.error('Erro ao salvar cliente:', JSON.stringify(error))
+    else { setNome(''); setDataNasc(''); setModal(false); await carregar() }
     setSalvando(false)
   }
 
