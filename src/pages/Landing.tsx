@@ -6,6 +6,7 @@ export default function Landing() {
     <div className="min-h-screen relative" style={{ backgroundColor: '#080414' }}>
       <FundoEtereo />
 
+      <div className="relative z-10">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 max-w-5xl mx-auto">
         <span className="font-serif text-dourado text-2xl">✦ Oráculo Andara</span>
@@ -115,6 +116,7 @@ export default function Landing() {
         <p className="font-serif text-dourado text-lg mb-1">✦ Oráculo Andara</p>
         <p className="text-cristal/30 text-xs">© 2025 Clarisse Schultz · Todos os direitos reservados</p>
       </footer>
+      </div>
     </div>
   )
 }
