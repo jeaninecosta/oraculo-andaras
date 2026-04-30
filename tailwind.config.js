@@ -11,9 +11,9 @@ export default {
           claro:  '#6d28d9',
         },
         dourado: {
-          DEFAULT: '#d4af37',
-          claro:   '#f0d878',
-          escuro:  '#a07820',
+          DEFAULT: '#f0c040',
+          claro:   '#ffe878',
+          escuro:  '#c09030',
         },
         cristal: {
           DEFAULT: '#e8d5f5',

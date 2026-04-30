@@ -61,16 +61,16 @@ export default function Clientes() {
       ) : clientes.length === 0 ? (
         <div className="glass rounded-2xl p-12 text-center">
           <p className="text-4xl mb-4">👤</p>
-          <p className="text-cristal/50">Nenhum cliente cadastrado ainda.</p>
-          <p className="text-cristal/30 text-sm mt-1">Clique em "Novo cliente" para começar.</p>
+          <p className="text-white">Nenhum cliente cadastrado ainda.</p>
+          <p className="text-white/95 text-sm mt-1">Clique em "Novo cliente" para começar.</p>
         </div>
       ) : (
         <div className="grid gap-3">
           {clientes.map(c => (
             <div key={c.id} className="glass rounded-2xl p-4 flex items-center justify-between">
               <div>
-                <p className="font-medium text-cristal">{c.nome}</p>
-                <p className="text-cristal/40 text-xs mt-0.5">
+                <p className="font-medium text-white">{c.nome}</p>
+                <p className="text-white/90 text-xs mt-0.5">
                   Nascimento: {new Date(c.data_nascimento + 'T12:00:00').toLocaleDateString('pt-BR')}
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function Clientes() {
                   Consultar
                 </button>
                 <button onClick={() => excluir(c.id)}
-                  className="text-cristal/30 hover:text-red-400 transition-colors text-sm p-1">✕</button>
+                  className="text-white hover:text-red-400 transition-colors text-sm p-1">✕</button>
               </div>
             </div>
           ))}
@@ -95,20 +95,21 @@ export default function Clientes() {
             <h3 className="font-serif text-dourado text-xl mb-4">Novo Cliente</h3>
             <div className="space-y-3">
               <div>
-                <label className="text-cristal/70 text-xs mb-1 block">Nome</label>
+                <label className="text-white text-xs mb-1 block">Nome</label>
                 <input value={nome} onChange={e => setNome(e.target.value)}
                   placeholder="Nome completo do cliente"
-                  className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-2.5 text-cristal text-sm focus:outline-none focus:border-dourado/50 placeholder:text-cristal/30" />
+                  className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-dourado/50 placeholder:text-white" />
               </div>
               <div>
-                <label className="text-cristal/70 text-xs mb-1 block">Data de nascimento</label>
+                <label className="text-white text-xs mb-1 block">Data de nascimento</label>
                 <input type="date" value={dataNasc} onChange={e => setDataNasc(e.target.value)}
-                  className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-2.5 text-cristal text-sm focus:outline-none focus:border-dourado/50" />
+                  className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-dourado/50"
+                  style={{ colorScheme: 'dark' }} />
               </div>
             </div>
             <div className="flex gap-2 mt-5">
               <button onClick={() => setModal(false)}
-                className="flex-1 border border-white/10 text-cristal/60 hover:text-cristal py-2.5 rounded-xl text-sm transition-all">
+                className="flex-1 border border-white/10 text-white hover:text-white py-2.5 rounded-xl text-sm transition-all">
                 Cancelar
               </button>
               <button onClick={salvar} disabled={salvando || !nome.trim() || !dataNasc}

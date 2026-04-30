@@ -52,7 +52,8 @@ Escreva apenas a síntese, sem título, sem introdução explicativa.`
     })
 
     const data = await response.json()
-    const sintese = data.content?.[0]?.text ?? ''
+    const raw = data.content?.[0]?.text ?? ''
+    const sintese = raw.replace(/^#+\s+[^\n]*\n{0,2}/gm, '').trim()
 
     return new Response(JSON.stringify({ sintese }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },

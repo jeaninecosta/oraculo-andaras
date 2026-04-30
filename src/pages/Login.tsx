@@ -41,7 +41,7 @@ export default function Login() {
       <div className="glass rounded-2xl p-8 max-w-sm text-center">
         <div className="text-4xl mb-4">✉️</div>
         <h2 className="text-xl font-serif text-dourado mb-3">Confirme seu e-mail</h2>
-        <p className="text-cristal/70 text-sm">
+        <p className="text-white text-sm">
           Enviamos um link de confirmação para <strong>{email}</strong>. Após confirmar, você será redirecionado para o pagamento.
         </p>
       </div>
@@ -54,7 +54,7 @@ export default function Login() {
       <div className="relative z-10 w-full max-w-sm">
         <div className="text-center mb-8">
           <Link to="/" className="text-dourado font-serif text-3xl">✦ Oráculo Andara</Link>
-          <p className="text-cristal/50 text-sm mt-1">Uma ferramenta de orientação e frequência</p>
+          <p className="text-white text-sm mt-1">Uma ferramenta de orientação e frequência</p>
         </div>
 
         <div className="glass rounded-2xl p-8">
@@ -62,7 +62,7 @@ export default function Login() {
             <div className={`mb-4 text-center text-xs px-3 py-2 rounded-xl ${
               planoSelecionado === 'pro'
                 ? 'bg-dourado/10 text-dourado border border-dourado/20'
-                : 'bg-white/5 text-cristal/50 border border-white/10'
+                : 'bg-white/5 text-white/95 border border-white/10'
             }`}>
               {planoSelecionado === 'pro' ? '⭐ Plano Profissional (PRO)' : 'Plano Básico'}
               {' '}· <span className="opacity-60">modo teste ativo</span>
@@ -72,7 +72,7 @@ export default function Login() {
             {(['login', 'cadastro'] as const).map(m => (
               <button key={m} onClick={() => setModo(m)}
                 className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
-                  modo === m ? 'bg-mistico-medio text-dourado' : 'text-cristal/50 hover:text-cristal'
+                  modo === m ? 'bg-mistico-medio text-dourado' : 'text-white/95 hover:text-white'
                 }`}>
                 {m === 'login' ? 'Entrar' : 'Criar conta'}
               </button>
@@ -82,23 +82,23 @@ export default function Login() {
           <form onSubmit={handleSubmit} className="space-y-4">
             {modo === 'cadastro' && (
               <div>
-                <label className="text-cristal/70 text-xs mb-1 block">Nome</label>
+                <label className="text-white text-xs mb-1 block">Nome</label>
                 <input type="text" value={nome} onChange={e => setNome(e.target.value)}
                   placeholder="Seu nome completo"
-                  className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-3 text-cristal text-sm focus:outline-none focus:border-dourado/50 placeholder:text-cristal/30" />
+                  className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-dourado/50 placeholder:text-white" />
               </div>
             )}
             <div>
-              <label className="text-cristal/70 text-xs mb-1 block">E-mail</label>
+              <label className="text-white text-xs mb-1 block">E-mail</label>
               <input type="email" value={email} onChange={e => setEmail(e.target.value)}
                 placeholder="seu@email.com"
-                className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-3 text-cristal text-sm focus:outline-none focus:border-dourado/50 placeholder:text-cristal/30" />
+                className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-dourado/50 placeholder:text-white" />
             </div>
             <div>
-              <label className="text-cristal/70 text-xs mb-1 block">Senha</label>
+              <label className="text-white text-xs mb-1 block">Senha</label>
               <input type="password" value={senha} onChange={e => setSenha(e.target.value)}
                 placeholder="••••••••"
-                className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-3 text-cristal text-sm focus:outline-none focus:border-dourado/50 placeholder:text-cristal/30" />
+                className="w-full bg-mistico-escuro border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-dourado/50 placeholder:text-white" />
             </div>
 
             {erro && <p className="text-red-400 text-xs text-center">{erro}</p>}
@@ -110,8 +110,8 @@ export default function Login() {
           </form>
         </div>
 
-        <p className="text-center text-cristal/40 text-xs mt-6">
-          <Link to="/" className="hover:text-cristal/70">← Voltar ao início</Link>
+        <p className="text-center text-white/90 text-xs mt-6">
+          <Link to="/" className="hover:text-white">← Voltar ao início</Link>
         </p>
       </div>
     </div>

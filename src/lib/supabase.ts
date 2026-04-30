@@ -30,7 +30,7 @@ export interface ClientePro {
 export interface Relatorio {
   id: string
   user_id: string
-  cliente_id: string
+  cliente_id: string | null
   cliente_nome: string
   tiragem: number[]
   texto_editado: string

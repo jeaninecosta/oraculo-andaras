@@ -27,3 +27,5 @@ scripts/texto-bruto.txt
 *.njsproj
 *.sln
 *.sw?
+
+.vercel

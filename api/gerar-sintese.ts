@@ -44,6 +44,8 @@ Escreva apenas a síntese, sem título, sem introdução explicativa.`
   })
 
   const data = await response.json()
-  const sintese = data.content?.[0]?.text ?? ''
+  const raw = data.content?.[0]?.text ?? ''
+  // Remove markdown headers (lines starting with #) that Claude may add despite instructions
+  const sintese = raw.replace(/^#+\s+[^\n]*\n{0,2}/gm, '').trim()
   res.status(200).json({ sintese })
 }
