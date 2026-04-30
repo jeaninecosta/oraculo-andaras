@@ -12,7 +12,7 @@
     @apply font-serif;
     font-weight: 700;
   }
-  p, li, span { text-shadow: 0 1px 4px rgba(0,0,0,0.7); }
+  p, li, span { text-shadow: 0 0 18px rgba(255,255,255,0.2), 0 1px 3px rgba(0,0,0,0.6); }
 }
 
 @layer utilities {
@@ -20,10 +20,10 @@
   .glass-dourado { @apply bg-black/50 backdrop-blur-md border border-dourado/40; }
   .text-gradient {
     @apply bg-gradient-to-r from-dourado via-dourado-claro to-dourado bg-clip-text text-transparent;
-    filter: drop-shadow(0 0 10px rgba(240,192,64,0.9));
+    filter: drop-shadow(0 0 12px rgba(240,192,64,1)) drop-shadow(0 0 28px rgba(240,192,64,0.8));
   }
   .text-dourado-glow {
-    text-shadow: 0 0 14px rgba(240,192,64,0.9), 0 0 35px rgba(240,192,64,0.5), 0 2px 8px rgba(0,0,0,0.8);
+    text-shadow: 0 0 16px rgba(240,192,64,1), 0 0 40px rgba(240,192,64,0.6), 0 2px 6px rgba(0,0,0,0.7);
   }
 }
 
