@@ -106,14 +106,21 @@ function criarAudio(elemento: Elem): () => void {
     n2.connect(bp).connect(gc).connect(ag); n2.start(); toStop.push(n2)
 
   } else if (elemento === 'Terra') {
-    const ag = ctx.createGain(); ag.gain.value = 0.55; ag.connect(master)
-    const n = noise(bBuf)
-    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 110
-    n.connect(lp).connect(ag); n.start(); toStop.push(n)
+    const ag = ctx.createGain(); ag.gain.value = 0.75; ag.connect(master)
+    // Camada grave — rumble profundo
+    const n1 = noise(bBuf)
+    const lp1 = ctx.createBiquadFilter(); lp1.type = 'lowpass'; lp1.frequency.value = 280
+    n1.connect(lp1).connect(ag); n1.start(); toStop.push(n1)
+    // Camada média — textura de terra
+    const n2 = noise(bBuf)
+    const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 420; bp.Q.value = 1.2
+    const g2 = ctx.createGain(); g2.gain.value = 0.6
+    n2.connect(bp).connect(g2).connect(ag); n2.start(); toStop.push(n2)
+    // Tom de ressonância da Terra
     const o = ctx.createOscillator(); o.frequency.value = 174; o.type = 'sine'
-    const og = ctx.createGain(); og.gain.value = 0.055
+    const og = ctx.createGain(); og.gain.value = 0.18
     o.connect(og).connect(ag); o.start(); toStop.push(o)
-    lfo(0.08, 0.09, ag.gain)
+    lfo(0.08, 0.12, ag.gain)
 
   } else if (elemento === 'Ar') {
     const ag = ctx.createGain(); ag.gain.value = 0.3; ag.connect(master)
@@ -128,17 +135,20 @@ function criarAudio(elemento: Elem): () => void {
     lfo(0.13, 0.07, gw.gain)
 
   } else { // Éter
-    const ag = ctx.createGain(); ag.gain.value = 0.5; ag.connect(master)
-    ;[cfg.base / 2, cfg.base, cfg.base * 1.5, 528].forEach((f, i) => {
+    const ag = ctx.createGain(); ag.gain.value = 0.75; ag.connect(master)
+    // Taças de cristal — harmônicas com tremolo lento
+    ;[cfg.base / 2, cfg.base, cfg.base * 1.5, 528, 432].forEach((f, i) => {
       const o = ctx.createOscillator(); o.frequency.value = f; o.type = 'sine'
-      const og = ctx.createGain(); og.gain.value = [0.11, 0.08, 0.045, 0.055][i]
+      const og = ctx.createGain(); og.gain.value = [0.22, 0.18, 0.12, 0.14, 0.10][i]
       o.connect(og).connect(ag); o.start(); toStop.push(o)
-      lfo(0.05 + i * 0.018, og.gain.value * 0.45, og.gain)
+      lfo(0.05 + i * 0.018, og.gain.value * 0.5, og.gain)
     })
+    // Névoa cósmica — ruído filtrado audível
     const n = noise(wBuf)
-    const hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 6500
-    const gs = ctx.createGain(); gs.gain.value = 0.038
-    n.connect(hp).connect(gs).connect(ag); n.start(); toStop.push(n)
+    const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 1800; bp.Q.value = 0.5
+    const gs = ctx.createGain(); gs.gain.value = 0.18
+    n.connect(bp).connect(gs).connect(ag); n.start(); toStop.push(n)
+    lfo(0.07, 0.08, gs.gain)
   }
 
   return () => {
