@@ -385,12 +385,11 @@ export default function Meditacao() {
       <div className="glass rounded-2xl p-5 space-y-3">
         <p className="text-xs text-dourado/90 uppercase tracking-widest">Como funciona</p>
         <p className="text-white text-xs leading-relaxed">
-          O áudio binaural envia <strong style={{ color: cfg.cor }}>{cfg.base} Hz</strong> para o ouvido esquerdo e{' '}
-          <strong style={{ color: cfg.cor }}>{cfg.base + cfg.beat} Hz</strong> para o direito. Seu cérebro percebe a diferença de{' '}
-          <strong style={{ color: cfg.cor }}>{cfg.beat} Hz</strong> ({cfg.onda}) e sincroniza com essa frequência naturalmente.
+          O áudio binaural envia um tom ligeiramente diferente para cada ouvido. Seu cérebro percebe a diferença entre eles e sincroniza naturalmente com a frequência do elemento{' '}
+          <strong style={{ color: cfg.cor }}>{elem}</strong> — induzindo o estado meditativo ideal para essa energia.
         </p>
         <p className="text-white/80 text-xs leading-relaxed">
-          Misturado ao som ambient do elemento para tornar a experiência mais imersiva. Sente-se confortavelmente, feche os olhos e siga o guia de respiração.
+          Sons ambient gerados em tempo real complementam a experiência. Sente-se confortavelmente, feche os olhos e siga o guia de respiração.
         </p>
       </div>
     </div>
