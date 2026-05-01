@@ -8,6 +8,71 @@ interface FaseLunar {
   tipoTiragem: string
 }
 
+function getLunarAge(data: Date): number {
+  const known = new Date(2000, 0, 6, 18, 14)
+  const synodic = 29.53058867
+  const diff = (data.getTime() - known.getTime()) / (1000 * 60 * 60 * 24)
+  return ((diff % synodic) + synodic) % synodic
+}
+
+function LuaVisual({ age }: { age: number }) {
+  const R = 65
+  const size = R * 2 + 20
+  const synodic = 29.53058867
+  const p = age / synodic
+  const illum = (1 - Math.cos(2 * Math.PI * p)) / 2
+  const isWaxing = p <= 0.5
+  const rx = Math.max(0.5, R * Math.abs(Math.cos(2 * Math.PI * p)))
+
+  let litPath: string
+  if (illum < 0.01) {
+    litPath = ''
+  } else if (illum > 0.99) {
+    litPath = `M 0 ${-R} A ${R} ${R} 0 1 1 0 ${R} A ${R} ${R} 0 1 1 0 ${-R} Z`
+  } else if (isWaxing) {
+    const sweep = p < 0.25 ? 0 : 1
+    litPath = `M 0 ${-R} A ${R} ${R} 0 0 1 0 ${R} A ${rx.toFixed(2)} ${R} 0 0 ${sweep} 0 ${-R} Z`
+  } else {
+    const q = p - 0.5
+    const sweep = q < 0.25 ? 1 : 0
+    litPath = `M 0 ${-R} A ${R} ${R} 0 0 0 0 ${R} A ${rx.toFixed(2)} ${R} 0 0 ${sweep} 0 ${-R} Z`
+  }
+
+  return (
+    <svg
+      width={size} height={size}
+      viewBox={`${-R - 10} ${-R - 10} ${size} ${size}`}
+      style={{ filter: 'drop-shadow(0 0 28px rgba(180,180,255,0.5)) drop-shadow(0 0 10px rgba(210,205,180,0.35))' }}
+    >
+      <defs>
+        <radialGradient id="moonLit" cx="38%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="#faf8ee" />
+          <stop offset="40%" stopColor="#ddd9c2" />
+          <stop offset="100%" stopColor="#a8a490" />
+        </radialGradient>
+        <radialGradient id="moonDark" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#1c0e32" />
+          <stop offset="100%" stopColor="#08041a" />
+        </radialGradient>
+        <clipPath id="moonClip">
+          <circle cx="0" cy="0" r={R} />
+        </clipPath>
+      </defs>
+      <circle cx="0" cy="0" r={R} fill="url(#moonDark)" />
+      {litPath && <path d={litPath} fill="url(#moonLit)" clipPath="url(#moonClip)" />}
+      <g clipPath="url(#moonClip)" opacity="0.13">
+        <circle cx={-13} cy={-8} r={5.5} fill="none" stroke="#7a7a6a" strokeWidth="1.5" />
+        <circle cx={21} cy={15} r={3.5} fill="none" stroke="#7a7a6a" strokeWidth="1" />
+        <circle cx={-8} cy={25} r={4} fill="none" stroke="#7a7a6a" strokeWidth="1.2" />
+        <circle cx={11} cy={-23} r={3} fill="none" stroke="#7a7a6a" strokeWidth="1" />
+        <circle cx={29} cy={-11} r={2.5} fill="none" stroke="#7a7a6a" strokeWidth="0.8" />
+        <circle cx={-28} cy={18} r={3} fill="none" stroke="#7a7a6a" strokeWidth="0.9" />
+      </g>
+      <circle cx="0" cy="0" r={R - 1} fill="none" stroke="rgba(240,235,210,0.1)" strokeWidth="2" />
+    </svg>
+  )
+}
+
 function getFaseLunar(data: Date): FaseLunar {
   const known = new Date(2000, 0, 6, 18, 14)
   const synodic = 29.53058867
@@ -102,7 +167,9 @@ function TelaUpgrade() {
 export default function RitmoLunar() {
   const { isPro } = useAuth()
   const navigate = useNavigate()
-  const fase = getFaseLunar(new Date())
+  const hoje = new Date()
+  const fase = getFaseLunar(hoje)
+  const lunarAge = getLunarAge(hoje)
   const dicas = DICAS_POR_FASE[fase.fase] ?? []
 
   if (!isPro) return <TelaUpgrade />
@@ -121,11 +188,8 @@ export default function RitmoLunar() {
 
       {/* Fase atual */}
       <div className="glass-dourado rounded-3xl p-8 text-center space-y-4">
-        <div
-          className="text-8xl mb-2"
-          style={{ filter: 'drop-shadow(0 0 20px #d4af3744)' }}
-        >
-          {fase.emoji}
+        <div className="flex justify-center mb-2">
+          <LuaVisual age={lunarAge} />
         </div>
         <div>
           <p className="text-xs text-dourado/90 uppercase tracking-widest mb-1">Fase atual</p>
