@@ -38,7 +38,7 @@
   background-image: url(/galaxy-bg.jpg);
   background-size: cover;
   background-position: center;
-  filter: contrast(1.15) saturate(1.4) brightness(1.2);
+  filter: contrast(1.15) saturate(1.35) brightness(1.05);
 }
 
 /* ── Sombra topo (header legível) ──────────────────────────────── */
@@ -65,43 +65,43 @@
 }
 .orb-1 {
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(120,70,255,0.65), transparent 70%);
+  background: radial-gradient(circle, rgba(120,70,255,0.50), transparent 70%);
   top: -180px; left: -150px;
   animation: orb1 22s ease-in-out infinite;
 }
 .orb-2 {
   width: 450px; height: 450px;
-  background: radial-gradient(circle, rgba(220,70,200,0.55), transparent 70%);
+  background: radial-gradient(circle, rgba(220,70,200,0.42), transparent 70%);
   bottom: -120px; right: -100px;
   animation: orb2 28s ease-in-out infinite;
 }
 .orb-3 {
   width: 350px; height: 350px;
-  background: radial-gradient(circle, rgba(60,100,255,0.50), transparent 70%);
+  background: radial-gradient(circle, rgba(60,100,255,0.38), transparent 70%);
   top: 40%; left: 35%;
   animation: orb3 18s ease-in-out infinite;
 }
 .orb-4 {
   width: 260px; height: 260px;
-  background: radial-gradient(circle, rgba(220,120,255,0.50), transparent 70%);
+  background: radial-gradient(circle, rgba(220,120,255,0.38), transparent 70%);
   top: 15%; right: 8%;
   animation: orb4 35s ease-in-out infinite;
 }
 .orb-5 {
   width: 320px; height: 320px;
-  background: radial-gradient(circle, rgba(80,50,220,0.55), transparent 70%);
+  background: radial-gradient(circle, rgba(80,50,220,0.42), transparent 70%);
   bottom: 10%; left: 15%;
   animation: orb5 24s ease-in-out infinite;
 }
 .orb-6 {
   width: 200px; height: 200px;
-  background: radial-gradient(circle, rgba(255,100,220,0.48), transparent 70%);
+  background: radial-gradient(circle, rgba(255,100,220,0.36), transparent 70%);
   top: 60%; right: 20%;
   animation: orb6 30s ease-in-out infinite;
 }
 .orb-7 {
   width: 280px; height: 280px;
-  background: radial-gradient(circle, rgba(100,150,255,0.50), transparent 70%);
+  background: radial-gradient(circle, rgba(100,150,255,0.38), transparent 70%);
   top: 30%; left: 5%;
   animation: orb7 26s ease-in-out infinite;
 }
