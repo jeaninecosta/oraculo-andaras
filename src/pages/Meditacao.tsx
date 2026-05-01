@@ -24,7 +24,7 @@ function criarAudio(elemento: Elem): () => void {
 
   // ── Binaural ─────────────────────────────────────────────────
   const binGain = ctx.createGain()
-  binGain.gain.value = 0.16
+  binGain.gain.value = elemento === 'Éter' ? 0.07 : 0.16
   binGain.connect(master)
 
   const oscL = ctx.createOscillator()
@@ -135,20 +135,20 @@ function criarAudio(elemento: Elem): () => void {
     lfo(0.13, 0.07, gw.gain)
 
   } else { // Éter
-    const ag = ctx.createGain(); ag.gain.value = 0.75; ag.connect(master)
-    // Taças de cristal — harmônicas com tremolo lento
-    ;[cfg.base / 2, cfg.base, cfg.base * 1.5, 528, 432].forEach((f, i) => {
+    const ag = ctx.createGain(); ag.gain.value = 0.7; ag.connect(master)
+    // Taças de cristal — apenas frequências suaves (sem agudos irritantes)
+    ;[432, 528, cfg.base / 2].forEach((f, i) => {
       const o = ctx.createOscillator(); o.frequency.value = f; o.type = 'sine'
-      const og = ctx.createGain(); og.gain.value = [0.22, 0.18, 0.12, 0.14, 0.10][i]
+      const og = ctx.createGain(); og.gain.value = [0.20, 0.16, 0.12][i]
       o.connect(og).connect(ag); o.start(); toStop.push(o)
-      lfo(0.05 + i * 0.018, og.gain.value * 0.5, og.gain)
+      lfo(0.04 + i * 0.02, og.gain.value * 0.4, og.gain)
     })
-    // Névoa cósmica — ruído filtrado audível
+    // Névoa etérea — ruído suave em faixa média
     const n = noise(wBuf)
-    const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 1800; bp.Q.value = 0.5
-    const gs = ctx.createGain(); gs.gain.value = 0.18
+    const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 900; bp.Q.value = 0.6
+    const gs = ctx.createGain(); gs.gain.value = 0.14
     n.connect(bp).connect(gs).connect(ag); n.start(); toStop.push(n)
-    lfo(0.07, 0.08, gs.gain)
+    lfo(0.06, 0.06, gs.gain)
   }
 
   return () => {
