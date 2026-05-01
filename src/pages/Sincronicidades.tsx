@@ -14,7 +14,7 @@ interface Carta {
 interface Relatorio {
   id: string
   tiragem: number[]
-  created_at: string
+  criado_em: string
 }
 
 const ELEMENTO_DESC: Record<string, string> = {
@@ -61,9 +61,9 @@ export default function Sincronicidades() {
     if (!user || !isPro) { setLoading(false); return }
     supabase
       .from('relatorios')
-      .select('id, tiragem, created_at')
+      .select('id, tiragem, criado_em')
       .eq('user_id', user.id)
-      .order('created_at', { ascending: false })
+      .order('criado_em', { ascending: false })
       .limit(30)
       .then(({ data }) => {
         setRelatorios((data ?? []) as Relatorio[])
@@ -106,7 +106,7 @@ export default function Sincronicidades() {
     }))
 
   const semanaRelatorios = relatorios.filter(r => {
-    const d = new Date(r.created_at)
+    const d = new Date(r.criado_em)
     const now = new Date()
     return (now.getTime() - d.getTime()) < 7 * 24 * 60 * 60 * 1000
   })
