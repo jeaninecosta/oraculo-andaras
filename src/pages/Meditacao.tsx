@@ -389,7 +389,7 @@ export default function Meditacao() {
           <strong style={{ color: cfg.cor }}>{elem}</strong> — induzindo o estado meditativo ideal para essa energia.
         </p>
         <p className="text-white/80 text-xs leading-relaxed">
-          Sons ambient gerados em tempo real complementam a experiência. Sente-se confortavelmente, feche os olhos e siga o guia de respiração.
+          Sons ambientes gerados em tempo real complementam a experiência. Sente-se confortavelmente, feche os olhos e siga o guia de respiração.
         </p>
       </div>
     </div>
