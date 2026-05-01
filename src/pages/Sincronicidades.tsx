@@ -231,7 +231,7 @@ export default function Sincronicidades() {
           <p className="text-xs text-dourado/90 uppercase tracking-widest flex items-center gap-2">
             <span>✦</span> Oráculo Vivo
           </p>
-          <p className="font-serif text-dourado text-base leading-relaxed">
+          <p className="text-dourado text-base leading-relaxed italic">
             "{ORACULO_VIVO[elementoPredominante]}"
           </p>
         </div>
