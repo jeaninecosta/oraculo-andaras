@@ -40,6 +40,7 @@ export default function AppShell() {
             <NavLink to="/app/ritmo-lunar" className={linkClass}>🌕 Lunar</NavLink>
             <NavLink to="/app/sincronicidades" className={linkClass}>🔗 Sincroni.</NavLink>
             <NavLink to="/app/minhas-andaras" className={linkClass}>✨ Minhas</NavLink>
+            <NavLink to="/app/meditacao" className={linkClass}>🎵 Meditação</NavLink>
             <NavLink to="/app/clientes" className={linkClass}>👤 Clientes</NavLink>
             <NavLink to="/app/relatorios" className={linkClass}>📋 Relatórios</NavLink>
           </>}
@@ -72,6 +73,7 @@ export default function AppShell() {
             <NavLink to="/app/ritmo-lunar" className={linkClass} onClick={() => setMenuAberto(false)}>🌕 Ritmo Lunar</NavLink>
             <NavLink to="/app/sincronicidades" className={linkClass} onClick={() => setMenuAberto(false)}>🔗 Sincronicidades</NavLink>
             <NavLink to="/app/minhas-andaras" className={linkClass} onClick={() => setMenuAberto(false)}>✨ Minhas Andaras</NavLink>
+            <NavLink to="/app/meditacao" className={linkClass} onClick={() => setMenuAberto(false)}>🎵 Meditação Binaural</NavLink>
             <NavLink to="/app/clientes" className={linkClass} onClick={() => setMenuAberto(false)}>👤 Clientes</NavLink>
             <NavLink to="/app/relatorios" className={linkClass} onClick={() => setMenuAberto(false)}>📋 Relatórios</NavLink>
           </>}

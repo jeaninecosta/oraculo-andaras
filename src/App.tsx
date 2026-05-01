@@ -14,6 +14,7 @@ import ConselhoDasAndaras from './pages/ConselhoDasAndaras'
 import Sincronicidades from './pages/Sincronicidades'
 import RitmoLunar from './pages/RitmoLunar'
 import MinhasAndaras from './pages/MinhasAndaras'
+import Meditacao from './pages/Meditacao'
 import FundoEtereo from './components/FundoEtereo'
 
 function RotaProtegida({ children }: { children: React.ReactNode }) {
@@ -71,6 +72,7 @@ export default function App() {
             <Route path="sincronicidades" element={<Sincronicidades />} />
             <Route path="ritmo-lunar" element={<RitmoLunar />} />
             <Route path="minhas-andaras" element={<MinhasAndaras />} />
+            <Route path="meditacao" element={<Meditacao />} />
             <Route path="clientes" element={<RotaPro><Clientes /></RotaPro>} />
             <Route path="relatorios" element={<RotaPro><Relatorios /></RotaPro>} />
             <Route path="sobre" element={<Sobre />} />

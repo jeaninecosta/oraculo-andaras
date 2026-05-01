@@ -138,6 +138,11 @@
   60%      { transform: translate(60px, 80px) scale(1.1); }
 }
 
+@keyframes ondaBinaural {
+  0%   { transform: scaleY(0.15); }
+  100% { transform: scaleY(1); }
+}
+
 @keyframes cintillar {
   0%, 100% { opacity: 0.1;  transform: scale(1); }
   50%      { opacity: 0.85; transform: scale(1.8); }
